@@ -1,0 +1,25 @@
+<!-- DTD v2 pour les bibliographies -->
+<!ELEMENT bibliographie (livre*, article*)>
+<!ELEMENT livre (titre, auteurs, tome, edition)>
+<!ELEMENT titre (#PCDATA)>
+<!ATTLIST titre soustitre CDATA #IMPLIED>
+<!ELEMENT auteurs (auteur+)>
+<!ELEMENT auteur (nom, prenom)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT tome EMPTY>
+<!ATTLIST tome pages CDATA #REQUIRED> 
+<!ATTLIST tome soustitre CDATA #IMPLIED>
+<!ELEMENT edition (editeur, lieu_edition, lieu_impression, isbn)>
+<!ELEMENT editeur (#PCDATA)>
+<!ELEMENT lieu_edition (#PCDATA)>
+<!ELEMENT lieu_impression (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT article (titre, auteurs, publication, avis*)>
+<!ELEMENT publication (journal, numero_pages, numero_journal)>
+<!ELEMENT journal (#PCDATA)>
+<!ATTLIST journal nom_journal CDATA "Feuille de Chou">
+<!ATTLIST journal annee (2000|2001|2002|avant_2000|inconnu) "inconnu">
+<!ELEMENT numero_pages (#PCDATA)>
+<!ELEMENT numero_journal (#PCDATA)>
+<!ELEMENT avis (#PCDATA)>

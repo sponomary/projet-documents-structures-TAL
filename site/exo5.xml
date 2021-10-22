@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-exos.xsl"?>
+<task>
+    <exercice num="5">
+        <title>DUCHN</title>
+        <part num="0">
+            <question>
+                <enonce num="1">Définir une feuille de style dont le résultat est un document HTML et donnant à voir uniquement le texte. Essayer de formater au mieux l’affichage.</enonce>
+                <comment>Le document DUCHN.xml contient le texte du Père Duchesne qui est le titre de différents journaux qui ont paru sous plusieurs plumes durant la Révolution française.</comment>
+                <response>
+                    <text>Dans ce premier exercice, ce qu'on peut faire pour mieux gérer l'affichage, c'est justement séparer les formes d'un espace et produire un saut de ligne à chaque fois qu'on rencontre un point OU un point d'exclamation OU un point d'interrogation. Malheureusement, il y a quelques erreurs dans ce document XML. J'imagine que l'outil qui a produit cet étiquetage a peut-être segmenté le texte par espace. Car il y avait quelques espaces manquants pour séparer la ponctuation et le premier mot de la nouvelle phrase, certains débuts de phrases sont restés collés à la fin de la phrase précédente. Pour bien gérér ce problème, j'ai utilisé les structures « substring-before » et « substring-after » pour extraire exactement le contenu qui m'intéresse.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex5-1.xsl duchn.xml > ex5-1.html</element>
+                    </list>
+                    <image name="./images/ex5-1.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xml" name="./../ex5_oblig/duchn.xml"/>
+                    <file type="xslt" name="./../ex5_oblig/ex5-1.xsl"/>
+                    <file type="html" name="./../ex5_oblig/ex5-1.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="2">Définir une feuille de style dont le résultat est un document HTML et donnant à voir uniquement le texte en surlignant les mots dont le lemme est « aristocrate » ou « patriote ».</enonce>
+                <response>
+                    <text>Pour effectuer cette tâche, j'ai repris la feuille XSLT de la question précédente en y ajoutant une condition additionnelle : quand le lemme est égal à « aristocrate » ou à « patriote », marquer la forme de ce lemme en jaune. J'ai gardé la segmentation en paragraphe pour lire le résultat aisément. Cependant, le résultat contient quelques erreurs. Parmi 169 occurrences de mots dont le lemme est « patriote », 4 occurrences n'étaient pas soulignés à cause des problèmes de découpage. Pareil pour le lemme « aristocrate » : la forme a été détectée 137 fois alors qu'il y a 139 occurrences au total. </text>
+                    <list>
+                        <element title="Transformation">xsltproc ex5-2.xsl duchn.xml > ex5-2.html</element>
+                    </list>
+                    <image name="./images/ex5-2.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex5_oblig/ex5-2.xsl"/>
+                    <file type="html" name="./../ex5_oblig/ex5-2.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="3">Définir une feuille de style dont le résultat est un document TXT contenant la liste des mots contenant la séquence « citoy », puis la séquence « patriot » ; compter aussi la fréquence de chacun des mots.</enonce>
+                <response>
+                    <text>J'ai commencé par impriquer l'élément « xsl:choose » dans un autre « xsl:choose » ce qui permet d'extraire dans un premier temps les formes contenants les séquences que nous recherchons et ensuite de tester si cette forme était mal coupée pour éviter d'extraire la forme mal formée. Il ne restait qu'a decompter toutes les formes avec la ligne de commandes.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex5-3.xsl duchn.xml | sort | uniq -c | sort -gr > ex5-3.txt</element>
+                    </list>
+                    <image name="./images/ex5-3.png" class="img-sm img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex5_oblig/ex5-3.xsl"/>
+                    <file type="txt" name="./../ex5_oblig/ex5-3.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="4">Définir une feuille de style dont le résultat est un document TXT contenant la liste des catégories ; compter aussi la fréquence de chacune.</enonce>
+                <response>
+                    <text>Cette fois j'ai extrait simplement toutes les catégories et puis je les ai triées (encore une fois!) avec les commandes UNIX. Le résultat contient 120 valeurs uniques, c'est un jeu d'étiquettes relativement large. Ces étiquettes contiennent non seulement les parties de discours mais aussi des informations grammaticales et lexicales. Les étiquettes les plus fréquentes sont, sans surprise, les mots grammaticaux PREP (prépositions) et la ponctuation PCTFAIB (points). Les étiquettes des mots lexicaux les plus fréquentes sont ADV (adverbes) et NCMS (nom commun masc. sg.). </text>
+                    <list>
+                        <element title="Transformation">xsltproc ex5-4.xsl duchn.xml | sort | uniq -c | sort -gr > ex5-4.txt </element>
+                    </list>
+                    <image name="./images/ex5-4.png" class="img-sm img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex5_oblig/ex5-4.xsl"/>
+                    <file type="txt" name="./../ex5_oblig/ex5-4.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="5">Définir une feuille de style permettant d’afficher le texte en surlignant les mots de catégories NOM ou ADJ.</enonce>
+                <response>
+                    <text>Pour cet exercice, j'ai repris la mise en forme du premier énoncé et j'ai ajouté encore deux conditions à l'expression « xsl:choose ». Si le nom de catégorie contient la séquence « NC » (nom commun) ou « NP » (nom propre), marquer sa forme en jeune. Et si le nom de catégorie contient « ADJ » (adjectif), marquer sa forme en bleu. L'aperçu du résultat et ci-dessous.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex5-5.xsl duchn.xml > ex5-5.html</element>
+                    </list>
+                    <image name="./images/ex5-5.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex5_oblig/ex5-5.xsl"/>
+                    <file type="html" name="./../ex5_oblig/ex5-5.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="6">Définir une feuille de style dont le résultat est un document TXT contenant la liste des séquences NOM-ADJ.</enonce>
+                <response>
+                    <text>Pour cette partie, j'ai encore testé si le contenu des formes que je recherche est mal coupé avec la structure « xsl:choose ». Le traitement est par contre est un peu long avec cette méthode. Le résultat contient quelques erreurs d'étiquetage morpho-syntaxique mais...on n'a pas encore inventé un étiqueteur précis à 100% ! </text>
+                    <list>
+                        <element title="Transformation">xsltproc ex5-6.xsl duchn.xml > ex5-6.txt</element>
+                    </list>
+                    <image name="./images/ex5-6.png" class="img-sm img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex5_oblig/ex5-6.xsl"/>
+                    <file type="txt" name="./../ex5_oblig/ex5-6.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="7">Définir une feuille de style dont le résultat est un document TXT contenant la liste des séquences NOM-PREP-NOM.</enonce>
+                <response>
+                    <text>La méthode pour extraire ce patron a dû être adaptée à cette fameuse erreur de segmentation dans le fichier de départ. D'abord, on récupère toutes les séquences NOM-PREP-NOM. Ensuite on teste avec « xsl:choose » si le contenu des balises &lt;forme&gt; de deux noms est mal coupé. En fonction de la situation, on affiche (ou pas) le contenu avant le «.» avec la fonction « substring-before ».  Dans les cas où il n'y a pas de problème de segmentation, on affiche tous les trois éléments sans aucune modification.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex5-7.xsl duchn.xml > ex5-7.txt</element>
+                    </list>
+                    <image name="./images/ex5-7.png" class="img-sm img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex5_oblig/ex5-7.xsl"/>
+                    <file type="txt" name="./../ex5_oblig/ex5-7.txt"/>
+                </response>
+            </question>
+        </part>
+    </exercice>
+</task>

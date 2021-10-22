@@ -1,0 +1,23 @@
+<!-- DTD pour les bibliographies -->
+<!ELEMENT bibliographie (livre*, article*)>
+<!ELEMENT livre (titre, auteurs, tomes?, edition)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteurs (auteur+)>
+<!ELEMENT auteur (nom, prenom)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT tomes (tome*)>
+<!ELEMENT tome (pages)>
+<!ELEMENT pages (#PCDATA)>
+<!ELEMENT edition (editeur, lieu_edition, lieu_impression, isbn)>
+<!ELEMENT editeur (#PCDATA)>
+<!ELEMENT lieu_edition (#PCDATA)>
+<!ELEMENT lieu_impression (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT article (titre, auteurs, publication, avis*)>
+<!ELEMENT publication (nom_journal, numero_pages, annee_publication, numero_journal)>
+<!ELEMENT nom_journal (#PCDATA)>
+<!ELEMENT numero_pages (#PCDATA)>
+<!ELEMENT annee_publication (#PCDATA)>
+<!ELEMENT numero_journal (#PCDATA)>
+<!ELEMENT avis (#PCDATA)>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-conclusion.xsl"?>
+<site>
+    <page>
+        <title>Conclusion</title>
+        <content>
+            <paragraph>
+                <text>
+                    En conclusion je voudrais dire que ce projet s'est révélé très enrichissant dans la mesure où il a consisté en une application concrète des outils de manipulation de documents structurés par le moyen de balisages en XML. J'ai appris à structurer l'information, chercher et extraire les données qui m'intéressent à partir de cette information grâce aux outils comme  XPath, XSLT et XQuery. J'ai aussi appris que pour les documents textuels il existe les normes et les recommandations internationales d'encodage en XML (TEI, initiative pour l’encodage du texte). J'ai bien souvent consulté le site w3schools.com car il contient plein de tutoriels à propos des sujets qu'on devait aborder ce semestre. Pareil pour le site officiel de TEI - tei-c.org - il s'est avéré très utile.
+                </text>
+            </paragraph>
+            <paragraph>
+                <text>
+                    Les notions ont a été introduits aux étudiants un par un, dans l'ordre logique. On a commencé par parler de la structure physique et logique des documents textuels ainsi que des bases du langage de balisage XML, utilisé pour structurer les documents. On a parlé de l'historique du langage XML, ses avantages et ses inconvénients. Enfin on a abordé les éléments fondamentaux d'un document TEI. Tout cela a été assuré par Mme. Marasescu-Galleron.
+                </text>
+            </paragraph>
+            <paragraph>
+                <text>
+                    Ensuite on a appris à localiser les parties, les nœuds d'un document XML avec le langage de requête XPath. Après ce XPath, on a été familiarisé au langage de transformation XML - XSLT. On a vu beaucoup d'exemples d'application dans le cours, on a vu comment XSLT utilise les requêtes XPath et comment on peut transformer un document XML dans un autre format, par exemple, tel HTML pour être affiché comme une page web (c'est comment ce site a été construit, d'ailleurs) ou bien dans le format TXT (via la ligne de commande avec xsltproc). Enfin, on a fini le programme du cours gracieusement en prenant en main un autre language de requête encore plus puissant – XQuery qui utilise aussi les éléments de XPath mais a aussi ses propres fonctionnalités pour interroger des bases de données XML. Cette partie du cours a été assurée par M. Serge Fleury.
+                </text>
+            </paragraph>
+            <paragraph>
+                <text>
+                    Créer ce site en XML était en effet un petit défi pour moi. En fait, j'ai pris le style et la structure de mon site pour un autre projet – Projet Encadré – en l'adaptant pour ce projet. Les données textuelles de chaque page de ce site sont organisées sous la forme d'un fichier XML : un XML par page. Les éléments de la structure HTML sont organisés dans 3 fichiers XSLT (un pour la page accueil, un pour la page de conclusion et un pour les pages des exercices). Les feuilles de style XSLT sont accompagniées d'un fichier CSS pour définir la partie visuelle. Pour bien afficher le résultat, j'utilise le navigateur Firefox, dans les configurations duquel j'ai préalablement changé le paramètre privacy.file_unique_origin de True en False.
+                </text>
+            </paragraph>
+        </content>
+    </page>
+</site>

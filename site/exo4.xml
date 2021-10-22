@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-exos.xsl"?>
+<task>
+    <exercice num="4">
+        <title>Funeral Blues</title>
+        <comment>Cliquer sur le bouton "fichier XML" pour visualiser les résultats (déjà présents sous forme d'images dans la page).</comment>
+        <part num="1">
+            <question>
+                <enonce>Définir une feuille de style (appelée TEI2TablePremiersVers.xsl) qui, sur des textes respectant la proposition TEI, extraie le nom de l'auteur, du recueil, et le premier vers du poème.</enonce>
+                <response>
+                    <text>Le poème Funeral Blues me tient particulièrement à cœur car je l'avais appris à l'école il y a environ 10 ans... Ici il est encodé en TEI et présente un extrait d'un recueil « Tell Me the Truth about Love, ten poems by W. H. Auden », publié en 1976 par Vintage Books, New York. Voici donc le résultat d'extraction du premier vers du poème.</text>
+                    <list>
+                        <element title="Transformation">xsltproc TEI2TablePremiersVers.xsl FuneralBlues.xml > ex4-q1.html</element>
+                    </list>
+                    <image name="./images/ex4-1.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xml" name="./../ex4/FuneralBlues.xml"/>
+                    <file type="xsl" name="./../ex4/TEI2TablePremiersVers.xsl"/>
+                    <file type="html" name="./../ex4/ex4-q1.html"/>
+                </response>
+            </question>
+        </part>
+        <part num="2">
+            <question>
+                <enonce>Définir une feuille de style (appelée NombreVers.xsl) dont le résultat est un document HTML qui affiche le nombre de vers du poème.</enonce>
+                <response>
+                    <text>Dans cette deuxième partie de l'exercice j'ai formé un simple HTML affichant les données demandées. Pour accéder au numéro de ligne, j'ai utilisé la fonction position(). Pour compter le nombre total de lignes – la fonction count(). Vous pouvez voir l'aperçu de la page HTML générée ci-dessous.</text>
+                    <list>
+                        <element title="Exemple de ligne permettant d'afficher le nom de l'auteur">&lt;xsl:value-of select="TEI.2/teiHeader/fileDesc/titleStmt/author"/&gt;</element>
+                        <element title="Exemple de ligne permettant d'accéder au numéro de ligne">&lt;xsl:value-of select="position()"/&gt;</element>
+                        <element title="Exemple de ligne permettant de compter le nombre de lignes">&lt;xsl:value-of select="count(//l)"/&gt;</element>
+                        <element title="Transformation">xsltproc NombreVers.xsl FuneralBlues.xml > ex4-q2.html</element>
+                    </list>
+                    <image name="./images/ex4-2.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xsl" name="./../ex4/NombreVers.xsl"/>
+                    <file type="html" name="./../ex4/ex4-q2.html"/>
+                </response>
+            </question>
+        </part>
+    </exercice>
+</task>

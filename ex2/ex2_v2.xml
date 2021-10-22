@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bibliographie SYSTEM "ex2_v2.dtd">
+<bibliographie>
+    <livre>
+        <titre soustitre="...">...</titre>
+        <auteurs>
+            <auteur>
+                <nom>...</nom>
+                <prenom>...</prenom>
+            </auteur>
+        </auteurs>
+        <tome pages="..." soustitre="..."/>
+        <edition>
+            <editeur>...</editeur>
+            <lieu_edition>...</lieu_edition>
+            <lieu_impression>...</lieu_impression>
+            <isbn>...</isbn>
+        </edition>
+    </livre>
+    <article>
+        <titre soustitre="...">...</titre> 
+        <auteurs>
+            <auteur>
+                <nom>...</nom>
+                <prenom>...</prenom>
+            </auteur>
+        </auteurs>
+        <publication>
+            <journal nom_journal="Feuille de Chou" annee="inconnu">...</journal>
+            <numero_pages>...</numero_pages>
+            <numero_journal>...</numero_journal>
+        </publication>
+        <avis>...</avis>
+    </article>
+</bibliographie>
+

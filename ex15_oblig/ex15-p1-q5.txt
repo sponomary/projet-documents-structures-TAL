@@ -1,0 +1,13 @@
+2905 Cl V
+ 419 Qu V
+ 410 N V
+ 188 Pro V
+  79 V Cl
+  45 V N
+   7 Adj V
+   4 V V
+   3 Adv V
+   1 X V
+   1 V Pro
+   1 Pre V
+   1 J V

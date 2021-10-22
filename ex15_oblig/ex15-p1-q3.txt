@@ -1,0 +1,1334 @@
+Trame RHAPSODIE pour Le Trameur
+
+Ex.15 XSLT-3 : Construire une feuille de styles pour extraire au moins 2 patrons morpho-syntaxiques
+
+-------------------------------------
+Patron ADJ-NOM
+-------------------------------------
+grande poste
+grande place
+droit direction
+autre rond
+grande ligne
+autre rond
+premier ministre
+certain nombre
+partiels égalisation
+masculins participation
+derniers siècles
+flying doctors
+petit retour
+première fois
+seule &
+seule médecin
+grandes villes
+premier tour
+Dernières Nouvelles
+cinglant désaveu
+mauvaise foi
+premier tour
+écrasante victoire
+grandes villes
+mauvaise direction
+seule réponse
+autre enjeu
+exécutif message
+même chose
+même fond
+petit peu
+franc Eugène
+première faute
+petite obstruction
+embêtant mais
+deux Argentins
+autre Argentin
+autre solution
+gauche attention
+petite boîte
+dégarni Gutiérrez
+petit relâchement
+grands signes
+tels joueurs
+tranquille attention
+petit côté
+même pas
+droit Zanetti
+mauvais séquence
+quarantième minute
+chers compatriotes
+derniers jours
+nombreuses victimes
+exceptionnel élan
+même communauté
+certaine appréhension
+grand nombre
+nouvel ordre
+grandes négociations
+chers compatriotes
+chers compatriotes
+nouveau siècle
+bonne &
+heureuse année
+seul informaticien
+certain nombre
+même temps
+mauvaise touche
+fausse manoeuvre
+nouvelle génération
+théoriciens Yves
+petite référence
+grande santé
+grande santé
+grande santé
+grande santé
+petit peu
+grande poste
+grande poste
+jeune fille
+flagrant délit
+autre dame
+Grande Chancellerie
+beau trajet
+beau trajet
+autre boutique
+petits trucs
+bonnes années
+tel ennui
+bonnes années
+bons &
+certaine &
+excellent souvenir
+excellent souvenir
+rêveur Paul
+petit passage
+petite rue
+petite rue
+incontournable Paris
+indéboulonnable Massimo
+beau monde
+autres réseaux
+jeune fille
+jeune fille
+jeune fille
+jeune fille
+deux Charlot
+certain nombre
+grande distinction
+première distinction
+haute antiquité
+autre aspect
+quelque sorte
+première distinction
+deuxième distinction
+seizième siècle
+même temps
+aveugles femmes
+vieil homme
+grande fantaisie
+grande légèreté
+grande crudité
+petite pudeur
+jeune homme
+jeune femme
+première fois
+grand complexe
+petit moment
+bon côté
+petit manège
+autre place
+grande fontaine
+petit porche
+petit kiosque
+petite scène
+bonne journée
+deuxième scène
+jeune fille
+bonne bourgeoisie
+solide gaillard
+même moment
+jeune fille
+autres motivations
+autres débats
+nouvelle théorie
+même sens
+nouvelle &
+véritable institution
+grands écrivains
+grands écrivains
+deux guerres
+grands leaders
+grands noms
+grands leaders
+neuf pour
+grands appartements
+jeunes couples
+petit peu
+petites &
+petites rues
+seule école
+petit peu
+jeunes parents
+trente ans
+autre part
+autres quartiers
+bonne partie
+jeunes voisins
+jeune fille
+vieille femme
+jeune fille
+grand seigneur
+jeune fille
+vieille dame
+jeune fille
+seconde scène
+bonne bourgeoise
+petite anecdote
+vieille dame
+jeune fille
+jeune fille
+jeune fille
+jeune fille
+jeune fille
+jeune homme
+petit peu
+petit cocon
+autres gens
+petite prépa
+petites choses
+petit cocon
+petit micro~
+petit microcosme
+petits boulots
+vraie médecine
+vraie médecine
+vraie médecine
+vraie médecine
+même longueur
+bons amis
+autre chose
+petit peu
+bon avocat
+nouvelle nuit
+spécial Sébastien
+nouvelle journée
+forte mobilisation
+quatorze février
+six blessés
+nouveau point
+grande mobilisation
+autre plan
+deux détenus
+ancien préfet
+première fois
+même façon
+vingtième journée
+nul zéro
+mauvaise moyenne
+meilleur diplôme
+grand soulagement
+mauvais souvenir
+super &
+super expérience
+nouvelle culture
+petit coude
+grande place
+petit kilomètre
+grand bâtiment
+autre chose
+autre côté
+grandes galettes
+véritable paille
+petit fauteuil
+petits salons
+trois fin
+même temps
+petit peu
+grand tournant
+grande ligne
+prochain rond
+prochain arrêt
+deuxième arrêt
+prochain arrêt
+prochain arrêt
+autres itinéraires
+petit peu
+futur procès
+bien Alexandre
+gros bordel
+certaine façon
+autre question
+petit ami
+petite amie
+petit ami
+autre prénom
+même prénom
+bien Ginette
+& écrivain
+large public
+nombreux best
+haut niveau
+premier novembre
+énorme savoir
+bon élève
+bon élève
+cinq premiers
+grandes écoles
+grandes écoles
+même temps
+autre côté
+petit studio
+gros bombardements
+quatre nuits
+de~ &
+dernier soir
+petit appartement
+bon niveau
+bon niveau
+bon lycée
+bons établissements
+certain nombre
+petits enfants
+sixième arrondissement
+petits enfants
+petits enfants
+petit enfant
+jeune fille
+jeune fille
+grand boulevard
+grand carrefour
+petite rue
+grande place
+ancienne caserne
+bons résultats
+autre part
+autre part
+certaine liberté
+premier lieu
+autre part
+vieille ville
+grande rue
+petite bifurcation
+petite fontaine
+petite rue
+grosse tache
+grosse tache
+propres merci
+petit bruit
+magique grâce
+meilleure pénétration
+énormes économies
+incroyable douceur
+joli geste
+magique tout
+autres succès
+certaine culpabilité
+certains membres
+petit peu
+deux guerres
+rose couleur
+large ruban
+jeunes filles
+grande limousine
+jeune fille
+toute façon
+premier amant
+autres &
+autres valeurs
+autres XXX
+monumentale biographie
+belle taille
+meilleur genre
+grands yeux
+beaux hôtels
+grands &
+grands hôtels
+petit peu
+troisième catégorie
+grand changement
+jeune Pologne
+jeune Pologne
+jeune Pologne
+jeune musique
+grand rayonnement
+tout Strauss
+polonaise direction
+dernière partie
+léger assoupissement
+mauvais rendez
+hautes études
+ancien chercheur
+dernier livre
+Haut Conseil
+hautes études
+petit peu
+proche cyclone
+même façon
+certain nombre
+forte ampleur
+petite question
+premier reportage
+premier octobre
+premier décembre
+autre chose
+bonne humeur
+premier bulletin
+petite souche
+propre besogne
+fortes épidémies
+première journée
+première journée
+bonne nouvelle
+première journée
+premières disciples
+bonne nouvelle
+bonne nouvelle
+premier jour
+tout début
+propre chef
+propre vie
+propre autorité
+propre nom
+propre vie
+première lecture
+onze février
+deuxième choix
+premier choix
+deuxième choix
+deuxième année
+troisième année
+petites phrases
+vraies options
+certaine &
+bonne &
+bonne conduite
+bonne conduite
+jeune fille
+jeune bourgeoise
+jeune bourgeoise
+même temps
+implacable précision
+petit peu
+autre chose
+grand mot
+jeunes filles
+bon nom
+jeune journaliste
+grand mot
+seule décision
+jeunes filles
+vrai départ
+autre époque
+autre carrière
+bonne comédienne
+grande illusion
+grande illusion
+même manière
+grande ligne
+difficile mission
+quatorze juillet
+traditionnel défilé
+cher Hervé
+cher Alain
+même pas
+tel contexte
+lourd tribut
+autre région
+bonne culture
+même profondeur
+bonne vie
+différentes couches
+autre point
+différentes couches
+petit pays
+grande ville
+
+-------------------------------------
+Patron VERBE-DET-NOM
+-------------------------------------
+crois le &
+est le boulevard
+traverser le cours
+continuer cette avenue
+a un stade
+traverses le champ
+est une route
+est un outrage
+sommes les héritiers
+coalisées nos combats
+arraché le suffrage
+arraché la liberté
+arraché la liberté
+emprunte la rue
+prends la rue
+remontant la rue
+a la halle
+avais une circonscription
+était une espèce
+trouvé cet endroit
+était un pays
+crois des souvenirs
+fait mes études
+été deux ans
+fini mes études
+fait mon PCB
+faisiez des études
+fait mes études
+faire des conférences
+est un type
+avait une famille
+avait un empire
+eu une remplaçante
+trouver une place
+fini mon tour
+était le Kenya
+été un avertissement
+arrête la vague
+est la gifle
+est la joue
+constate La Voix
+est une déferlante
+est une tornade
+change sa politique
+accélérer le rythme
+déchiffrer vos journaux
+avait un peu
+reste le cas
+occupe une place
+demande Le Progrès
+dit les réformes
+trouver le corner
+a une protestation
+poussé le ballon
+a une protestation
+sera un coup
+sera un coup
+est du cinquante
+perdu le ballon
+sifflé le penalty
+pris un carton
+est un peu
+repousse ce ballon
+expédie ce ballon
+tirer ce corner
+mettre le ballon
+est un arrêt
+tirer le but
+marque ce but
+armer son tir
+marque ce but
+dominait un peu
+lâcher son emprise
+jouaient un peu
+change les données
+planté son pied
+a une erreur
+a un peu
+rebondit un peu
+crois le ballon
+récupérer ce ballon
+commettre des fautes
+est un coup
+faire cette touche
+franchit la ligne
+récupéré ce ballon
+est le patron
+stoppé un Français
+repousser les assauts
+exprimer ma sympathie
+partageons la peine
+voir notre patrimoine
+redis mon émotion
+pèsent des responsabilités
+assurer la coordination
+sont le ciment
+parler leur coeur
+symbolisé le futur
+vivre ces instants
+achève une époque
+possédait les clés
+maîtrisait les règles
+comprends ces mouvements
+franchira les obstacles
+vu deux guerres
+naître cette année
+être le siècle
+respecter les droits
+défendre la liberté
+avoir de repos
+est le combat
+mène chaque jour
+épuise la planète
+dégradent le patrimoine
+changé la modernité
+pris des décisions
+garantissent notre avenir
+grandir la France
+garantit la paix
+reculer la pauvreté
+prendre sa part
+trouver sa place
+réaliser la tolérance
+dire le droit
+gardons ces exigences
+gardons ces valeurs
+aborder les temps
+viennent la France
+conjuguer le changement
+franchit le cap
+défricher les chemins
+aura les couleurs
+donnerons la France
+soit une nation
+accepte aucune fatalité
+fait plusieurs mé~
+& des entreprises
+faire des automatismes
+a un parc
+pose des problèmes
+avais mon travail
+écrire des programmes
+former les gens
+travailler un &
+utiliser un ordinateur
+été un problème
+remarque les jeunes
+êtes une génération
+a des gens
+est un peu
+est un peu
+voyaient un ordinateur
+toucher un clavier
+casser la machine
+était un peu
+est la peur
+a des mises
+arrive un autre
+connais les p~
+achètes un ordinateur
+traverser les jardins
+suivez les lignes
+a une approche
+est une &
+est une référence
+a un philosophe
+a une définition
+est une conception
+est le &
+est les traces
+remonte le boulevard
+regarde des vitrines
+a une voiture
+être un traiteur
+décharger des aliments
+vole une baguette
+voit la dame
+volé la baguette
+a une explication
+prends le mét~
+prends le métro
+prends le métro
+longe la Seine
+traverse la passerelle
+faire des courses
+a des manifestations
+est un &
+est un bus
+traverse le quar~
+traverse la Seine
+descends le boulevard
+fais quelques courses
+est le cours
+suis un peu
+a un boulanger
+est cet Aligre
+avez le &
+avait une annexe
+étais une année
+êtes un peu
+avait des baraquements
+était des baraquements
+a du mal
+amenait un étudiant
+avez des enseignants
+prolonge la place
+rejoindre la place
+ai deux itinéraires
+prends la rue
+tourne un peu
+faire des rencontres
+est une sorte
+échanger vos photos
+rapproche le monde
+connaître un people
+avoir le droit
+fréquenter les peoples
+créer une identité
+prendre les devants
+ouvrir le site
+est une sorte
+partager vos photos
+donner le code
+voir le jour
+a un accident
+appelle la police
+est la fille
+prends tout droit
+a un arrêt
+suis la ligne
+est un arrêt
+est une conférence
+ai une approche
+traiter mon sujet
+est le reflet
+est une réponse
+a des formes
+est le reflet
+est une notion
+est un concept
+appelle un concept
+est un philosophe
+avancé cette idée
+est un concept
+représenter les choses
+a des formes
+est un concept
+est une distinction
+a un art
+vient le terme
+avoir une sorte
+est le phénomène
+donné le mot
+donné le terme
+poursuivez des études
+était une affaire
+était une affaire
+commandait les oeuvres
+pratiquez la musique
+pratiquant la musique
+ayez un baladeur
+est un concept
+a des fonctions
+a des fonctions
+est une peinture
+avoir des fonctions
+avoir des fonctions
+avoir des fonctions
+avoir des &
+avoir des fonctions
+a des sociétés
+appellerai la dimension
+a des sociétés
+cherche le livre
+est un livre
+est un recueil
+eu des soucis
+a le pouvoir
+est des choses
+a un humour
+a des choses
+est une sorte
+avoir un aperçu
+lire un truc
+suis une fille
+est l~ &
+est le &
+est des &
+est deux &
+est le passa~
+remontez le boulevard
+rejoindre le tram
+longer les quais
+a une banque
+repérer les quais
+longez les galeries
+a une rue
+traverse la rue
+traversez cette rue
+passant ce porche
+a le &
+a les bulles
+a le bâtiment
+verra les bulles
+lorgne la vitrine
+voit le garçon
+transporte des plateaux
+tombent une dame
+dénonce le larcin
+est le &
+accorde une puissance
+prendre différents masques
+a des moments
+été le cas
+& la question
+est un peu
+a cinquante ans
+est un peu
+réhabiliter le lecteur
+avait une tâche
+était une façon
+faisait une théorie
+associer le lecteur
+a une sorte
+rappelez ce mot
+poser la question
+existé les écrivains
+dit un jour
+était un mot
+avait des gens
+a des intellectuels
+a des professeurs
+a des gens
+a un homme
+fait la charnière
+a un moment
+eu des chiffres
+a quelques années
+maintenir des clientèles
+a des déménagements
+a un enfant
+a un enfant
+été des changements
+voilà une clientèle
+maintenant les livres
+a deux collèges
+travaillais un peu
+a deux maternelles
+sont des écoles
+a deux maternelles
+sont les grands
+achètent les livres
+est la crise
+est des générations
+ont des enfants
+est une concurrence
+devenu le loisir
+passe quatre heures
+ouvrir un livre
+sont des jeunes
+a un problème
+devient un peu
+est le problème
+partir le matin
+regarde une devanture
+piquer une baguette
+voit le vol
+prévient le boulanger
+demande des explications
+explique le vol
+a la baguette
+voit une femme
+prend du pain
+voit le manque
+prend un bout
+voit la fille
+suis un peu
+termine un peu
+rejoint la bourgeoise
+rejoint le boulanger
+volé le pain
+a deux rendez
+a des gens
+avais une amie
+réussir le concours
+travailler le week
+faites le baby
+soient les habits
+est des principes
+est les parents
+& le fait
+être un peu
+est le &
+fait du bien
+sortir un peu
+avez des idées
+est un endroit
+a cette dimension
+être le spécialiste
+est un endroit
+est le niveau
+sont les &
+a des gens
+être un métier
+faire la spécialité
+importe un peu
+a des spécialités
+a certains métiers
+avoir un don
+a des spécialités
+a une spécialité
+est les &
+est les spécialités
+est des spécialités
+est des choses
+avoir ses idéaux
+a une loi
+vois des gens
+prennent leur chien
+faire leur besoin
+lance un appel
+& un cri
+ferons le point
+sauver les emplois
+quitté le procès
+dénoncent des pratiques
+annonce des mesures
+est la répartition
+pillé des magasins
+brûlé des pneus
+est la situation
+promulgué son plan
+adopté ce week
+ralentir les saisies
+concerne plusieurs millions
+payer leur crédit
+fait la belle
+quitté le procès
+rendrait sa décision
+fait le forcing
+prendre le contrôle
+est d~ &
+sont des procédés
+jouait trois matchs
+avais onze ans
+vécu le fait
+déménagé neuf fois
+eu onze ans
+été un an
+vécu deux ans
+connaissais aucun mot
+était un lycée
+était les Portugais
+vécu la chose
+retrouvé mes origines
+apprendre la langue
+montes les escaliers
+suivez cette avenue
+est la place
+suivez les rails
+sont des XXX
+est les chaises
+avait des &
+fait des impacts
+as aucun problème
+est un vrai
+est un fauteuil
+est des &
+est du bois
+est du bois
+est la maison
+faire le travail
+est des heures
+amener le tissu
+ai un rouleau
+as une base
+as une pièce
+garder les teintes
+ai un beige
+mis des coussins
+XXX mon tissu
+fait un contraste
+était une frange
+mettre de frange
+est une XXX
+était une frange
+est un fauteuil
+a une époque
+donne un aspect
+mets le tissu
+gardée la frange
+pris la poussière
+voir ce monsieur
+prenez la route
+prenez le rond
+passez le pont
+suivez la route
+situe un garage
+prenez ce rond
+descendez la route
+est des escaliers
+descends les escaliers
+verras un rond
+avoir la gare
+continuez tout droit
+a les intersions
+aura une intersection
+voir la cathédrale
+traverse la place
+traversez les rues
+faire cet angle
+est la place
+étiez un peu
+dit un mois
+écrivait des spectacles
+était le côté
+faisais un spectacle
+a la barbe
+est un peu
+faire une interview
+sortir un amant
+avez des fidélités
+avez des fidélités
+sortir un amant
+dire ce soir
+a aucun problème
+a un endroit
+est la télé
+a un endroit
+a des gens
+ont des emmerdes
+entendant la porte
+entendant la porte
+trompes ton ma~
+trompé mon mari
+est une copine
+était la vérité
+sent le César
+chauffé la mère
+est des fois
+appelant un pote
+dragouiller la mère
+faire une déclaration
+était la fille
+était la fille
+vu la mère
+devient le sherpa
+vacille la Russie
+continue son activité
+était un autodidacte
+fait aucune étude
+ayant une passion
+avais douze ans
+fait mes études
+avancer le savoir
+avancer la littérature
+eu cette conviction
+être un intellectuel
+marque son temps
+parlaient le français
+eu un environnement
+mis un peu
+découvrir la littérature
+était une partie
+faire des études
+était le domaine
+était une enfance
+avais la réputation
+avais la réputation
+était le projet
+gaspiller ce talent
+gaspiller ce talent
+voyais les mathématiques
+découvrir un univers
+suis un intellectuel
+faire une carrière
+avancer le monde
+voilà mes parents
+voir leurs amis
+avait cet endroit
+avait deux pièces
+aider les gens
+sortir les gens
+avait des gens
+passé ses nuits
+entendu le bombardement
+sont les anglais
+sont les anglais
+partis le lendemain
+longerais le boulevard
+avoir des enfants
+eu aucun problème
+compris les gens
+connaissais des gens
+mettaient leurs enfants
+ai des &
+a des enfants
+& le lycée
+est le problème
+vois les mamans
+apprendre le français
+imaginer des mélanges
+imaginer du busing
+ait des cours
+apprendre le français
+apprendre le français
+apprennent le français
+fait aucun organisme
+tenu un crayon
+dis les gens
+prend des enfants
+voulez le mélange
+regardait cette vitrine
+laissé son camion
+voler une baguette
+a une dame
+est un film
+suivez la ligne
+est la place
+a la Préfecture
+continuez tout droit
+est la ligne
+suivez la ligne
+suivez la ligne
+suivez la ligne
+obtenu mon bac
+est le fait
+offrir les clés
+proposer des méthodes
+est le fait
+réaliser des devoirs
+enseigne une langue
+réalisé une enquête
+ai un &
+ai le souci
+passer le concours
+mentir les vacances
+avoir une vie
+a un programme
+a plusieurs années
+mettait une heure
+prends le boulevard
+continues la rue
+a des produits
+est le cas
+mettre votre machine
+admirez le résultat
+oubliez vos produits
+voir le résultat
+a notre paire
+remplacer votre lessive
+ferme le tiroir
+mettez les scellés
+parti les scellés
+voilà le cycle
+briser le scellé
+voir le résultat
+avions notre pantalon
+remplacer votre lessive
+a des billes
+marche notre boule
+accroît le mouvement
+abaisse la tension
+émettant des ions
+capte le chlore
+contenant aucun détergent
+laisse aucun résidu
+écarte tout risque
+utilisez votre boule
+est votre linge
+avez un garçon
+faisait des allergies
+apporte une odeur
+préserver la planète
+avait un peu
+pressenti ce succès
+est une vague
+dit du mal
+est mon éditeur
+passer des fautes
+est un peu
+est un peu
+duré dix ans
+est un peu
+ouvrir le journal
+est un peu
+a un réflexe
+est un peu
+pris un peu
+a une rumeur
+est un chef
+appelle Un Barrage
+couronné Les jeux
+été une expérience
+avez quinze ans
+traverse le fleuve
+ai un chapeau
+eu ce chapeau
+est une mode
+changer votre vie
+commandé ce livre
+parti le fleuve
+est une Morris
+est un Chinois
+sais les choses
+a douze ans
+ai quinze ans
+devenir votre amant
+étais un peu
+étonnée un peu
+est une tradition
+jouait ces préludes
+déterminé sa vocation
+a treize ans
+était un homme
+avait un côté
+abandonner la composition
+est un groupe
+a des inimitiés
+cimenter ce groupe
+voulez quatre mousquetaires
+fondent une société
+voit la marque
+entendre la marque
+voici un extrait
+intitulé cette émission
+voici les invités
+maintenez vos prévisions
+est un scénario
+arrêter les épidémies
+arrêter la vague
+atténuer la vague
+est les scénarios
+précisiez les choses
+prédire un cyclone
+dire un peu
+imagine des scénarios
+a plusieurs scénarios
+a six fois
+a six fois
+a une chance
+ait six fois
+dit quarante millions
+avait trente baignoires
+était un virus
+a un &
+a une limite
+est une &
+est une question
+géré cette crise
+ait quelque chose
+eu des gradations
+est une maladie
+est un virus
+fait le tour
+est leur hiver
+avoir nos regards
+aura une chance
+rire cette &
+reçois le bulletin
+appelle les pompes
+a des chaînes
+évoqué la possibilité
+touchant le tiers
+manifeste son autorité
+lever la belle
+imposant les mains
+fait du mal
+est une action
+est une action
+montre un Jésus
+restaurer la dignité
+rétablir la personne
+trouve sa traduction
+accorde le pouvoir
+chasser les esprits
+faisaient des guérisseurs
+chasse les démons
+donnant la vie
+voilà le mal
+a le mal
+faisant du mal
+est une corvée
+fait des journées
+désire un peu
+attend sa paye
+donne la vie
+est un bac
+aime la biologie
+avait un entretien
+ai des facilités
+faire la psycho
+finir ma licence
+finirai ma licence
+avoir ma licence
+dessinent votre route
+occupez un poste
+reprendre un mot
+disons ma carrière
+est le contraire
+regardé ses yeux
+enregistrent chaque détail
+dessiné votre route
+est un homme
+disons cette faculté
+marche les autres
+écrit ce texte
+eu un desc~
+eu un destin
+eu un destin
+gagner ma vie
+avais vingt ans
+épouser un monsieur
+avais quatorze ans
+fait du journalisme
+avais aucune raison
+faire ce métier
+eu la guerre
+faire un journal
+sont des conditions
+revenir un peu
+eu votre père
+disons les mots
+est une expérience
+pris des cours
+pris des cours
+gagne ma vie
+avoir un métier
+a aucune importance
+faire quelque chose
+apprendre la sténodactylo
+aurai un métier
+apprendre la sténodactylo
+gagner ma vie
+eu une librairie
+entré un jour
+vends des livres
+perds ton temps
+paie mon loyer
+gagnais un peu
+fait ce métier
+raté une carrière
+eu du succès
+devenue une vedette
+devenue une vedette
+dites une fois
+élevés un peu
+prenez la direction
+a une ligne
+retrouver ce soir
+unit le président
+rencontrer la veille
+est la nation
+salue le courage
+salue la loyauté
+salue le dévouement
+servir sa défense
+est la raison
+adresse un salut
+assumer ses responsabilités
+tenir son rang
+quittant le terrain
+assurer sa sécurité
+faut un outil
+perd le combat
+affirme son influence
+engager cet engagement
+connais la somme
+a la région
+est une culture
+est une terre
+est une terre
+est un tempérament
+sentent cet attachement
+accorde sa fidélité
+fait ses preuves
+sont les curés
+est le Gâtinais
+est une région
+est un pays
+est un pays
+a une différence
+a des couches
+est le point
+avoir le prêtre
+ont une formation
+sont les difficultés

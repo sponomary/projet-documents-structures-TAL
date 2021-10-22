@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet-exos.xsl"?>
+<task>
+    <exercice num="3">
+        <title>TEI</title>
+        <part num="0">
+            <question>
+                <enonce>Construire un document XML/TEI en encodant 5 pages du « Dictionnaire universel » (1690) d’Antoine Furetière.</enonce>
+                <comment>Le dictionnaire en format PDF dont l'extrait j'ai encodé est très lourde (environ de 217 Mo). Ce fichier est par contre accessible sur Gallica, la bibliothèque numérique de la Bibliothèque nationale de France.</comment>
+                <response>
+                    <text>Le but de cet exercice est de créer un fichier XML/TEI à partir d’un document TXT obtenu par océrisation du Dictionnaire universel (1690) d’Antoine Furetière. Le groupe d'entrées choisi pour cet exercice est BLÉ - BOIRE. L’océrisation ne s'était pas tout à fait bien passée, donc je devais comparer le fichier avec le PDF original : il y avait des mots et des lignes qui manquaient. Une fois la correction finie, j'ai procédé au balisage selon les recommandations de la TEI pour le balisage de dictionnaires vues en cours. Pour apprendre plus sur certaines balises, notamment le contenu qu'elles peuvent avoir ou les autres balises où elles peuvent être imbriquées, j'ai beaucoup consulté ce site : https://tei-c.org. Sur ce site, j'ai aussi trouvé les exemples d'usage dans les différents documents TEI très utiles (dans mon cas, j'ai regardé surtout les exemples dans la section « Dictionaries »). Pour ma part, je trouve que les cas de polysémie étaient particulièrement difficiles à gérer. Dans mon extrait, il y a beaucoup de mots qui ont plusieurs sens. Les entrées  sont donc très longues, très riches et j'avais du mal à encoder ces longs paragraphes. Vous pouvez voir un petit aperçu des entrées du dictionnaire encodées ci-dessous. Pour consulter le document XML avec l'extrait du dictionnaire en entier, cliquez sur le bouton.</text>
+                    <image name="./images/ex3-apercu.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xml" name="./../ex3_oblig/ex3.xml"/>
+                </response>
+            </question>
+        </part>
+    </exercice>
+</task>

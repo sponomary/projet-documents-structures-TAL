@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-exos.xsl"?>
+<task>
+    <exercice num="2">
+        <title>DTD</title>
+        <comment>Logiciels utilisés pour réaliser cet exercice : Notepad++ et Oxygen.</comment>
+        <part num="1">
+            <question>
+                <enonce>Rédiger une DTD pour une bibliographie qui contient puis tester cette DTD avec un fichier XML ex-nihilo pour tester cette DTD.</enonce>
+                <comment>Le navigateur peut avoir du mal à afficher le contenu des fichiers DTD. Je recommande de les télécharger en cliquant le bouton droit de la souris.</comment>
+                <response>
+                    <text>On sait que la bibliographie doit contenir des informations sur des livres (titres, auteurs, tomes, nombre de pages, éditeur, ISBN, ...) et des articles (titres, auteurs, références de publication ...). J'ai donc commencé par structurer ces informations logiquement, comme dans l'exercice 1. Ensuite, sur Sublime Text, j'ai défini les balises de la DTD, en prenant en compte tous les éléments et attributs qui doivent être autorisés. Par exemple, notre bibliographie peut avoir zéro ou plusieurs livres, peut avoir plusieurs auteurs, donc nous devons déclarer cet élément avec un quantificateur qui convient (« * »). 
+Voici quelques exemples de déclarations :</text>
+                    <list>
+                        <element title="Déclaration de la DTD dans le fichier XML">&lt;!DOCTYPE bibliographie SYSTEM "ex2.dtd"&gt;</element>
+                        <element title="Déclaration de 0 ou plus de livres et articles">&lt;!ELEMENT bibliographie (livre*, article*)&gt;</element>
+                        <element title="Déclaration de 1 ou plus d'auteurs">&lt;!ELEMENT auteurs (auteur+)&gt;</element>
+                    </list>
+                    <image name="./images/ex2-1.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="dtd" name="./../ex2/ex2.dtd" num=" v.1"/>
+                    <file type="xml" name="./../ex2/ex2.xml" num=" v.1"/>							
+                </response>
+            </question>
+        </part>
+        <part num="2">
+            <question>
+                <enonce>Modifier la DTD précédente puis l'utiliser pour créer un document XML valide.</enonce>
+                <response>
+                    <text>Tout d'abord j'ai modifié la DTD comme c'était décrit dans l'énoncé : j'ai ajouté quelques attributs optionnels ou au contraire j'ai rendu certains attributs obligatoires; j'ai également ajouté des valeurs par défaut. Maintenant on peut créer des documents XML avec un squelette minimal à partir de ce schéma.</text>
+                    <image name="./images/ex2-2.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="dtd" name="./../ex2/ex2_v2.dtd" num=" v.2"/>
+                    <file type="xml" name="./../ex2/ex2_v2.xml" num=" v.2"/>
+                </response>
+            </question>
+        </part>
+    </exercice>
+</task>

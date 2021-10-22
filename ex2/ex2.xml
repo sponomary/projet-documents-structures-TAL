@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE bibliographie SYSTEM "ex2.dtd">
+<bibliographie>
+    <livre>
+        <titre>...</titre>
+        <auteurs>
+            <auteur>
+                <nom>...</nom>
+                <prenom>...</prenom>
+            </auteur>
+        </auteurs>
+        <tomes>
+            <tome>
+                <pages>...</pages>
+            </tome>
+        </tomes>
+        <edition>
+            <editeur>...</editeur>
+            <lieu_edition>...</lieu_edition>
+            <lieu_impression>...</lieu_impression>
+            <isbn>...</isbn>
+        </edition>
+    </livre>
+    <article>
+        <titre>...</titre> 
+        <auteurs>
+            <auteur>
+                <nom>...</nom>
+                <prenom>...</prenom>
+            </auteur>
+        </auteurs>
+        <publication>
+            <nom_journal>...</nom_journal>
+            <numero_pages>...</numero_pages>
+            <annee_publication>...</annee_publication>
+            <numero_journal>...</numero_journal>
+        </publication>
+        <avis>...</avis>
+    </article>
+</bibliographie>

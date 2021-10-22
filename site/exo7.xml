@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-exos.xsl"?>
+<task>
+    <exercice num="7">
+        <title>Exploration d'un fichier TEI</title>
+        <comment>Cliquer sur le bouton "fichier XML" pour visualiser les résultats (déjà présents sous forme d'images dans la page).</comment>
+        <part num="0">
+            <question>
+                <enonce num="1">Afficher le nom de l'auteur, le titre du poème, la date, et le recueil, dans cet ordre et au sein d'une page HTML bien formée</enonce>
+                <response>
+                    <text>Pour ce premier affichage, on récupère les informations qui nous intéressent grâce à &lt;xsl:value-of&gt;, tout simplement. Ensuite, les contenus ont été mis en tableau HTML dont l'aperçu est visible ci-dessous.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-1.xsl dormeur-tei.xml > ex7-1.html</element>
+                    </list>
+                    <image name="./images/ex7-1.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xml" name="./../ex7/dormeur-tei.xml"/>
+                    <file type="xslt" name="./../ex7/ex7-1.xsl"/>
+                    <file type="html" name="./../ex7/ex7-1.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="2">Afficher le titre et la date du poème, les vers les uns après les autres, sans balise (sortie texte brut)</enonce>
+                <response>
+                    <text>Pour avoir une sortie en texte brut, il ne faut pas oublier de changer la méthode de sortie de la transformation et marquer la bonne extension pour le nouveau fichier.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-2.xsl dormeur-tei.xml > ex7-2.txt</element>
+                    </list>
+                    <image name="./images/ex7-2.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex7/ex7-2.xsl"/>
+                    <file type="txt" name="./../ex7/ex7-2.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="3">Afficher le 1er et le 3ème vers de chaque groupe de vers au sein d'une page HTML bien formée</enonce>
+                <response>
+                    <text>Pour effectuer la tâche, je spécifie le numéro de l'élément dont je veux récupérer la valeur (l[1] et l[3]). L'affichage est toujours en tableau HTML.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-3.xsl dormeur-tei.xml > ex7-3.html</element>
+                    </list>
+                    <image name="./images/ex7-3.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex7/ex7-3.xsl"/>
+                    <file type="html" name="./../ex7/ex7-3.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="4">Afficher seulement le 1er et le 3ème quatrain au sein d'une page HTML bien formée</enonce>
+                <response>
+                    <text>Cette fois, on spécifie le numéro du nœud contenant le quatrain qui nous intéresse, en l'occurrence le premier et le troisième. Pour chacun de ses vers, on va récupérer le contenu textuel.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-4.xsl dormeur-tei.xml > ex7-4.html</element>
+                    </list>
+                    <image name="./images/ex7-4.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex7/ex7-4.xsl"/>
+                    <file type="html" name="./../ex7/ex7-4.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="5">Afficher chaque vers précédé de son numéro d'ordre au sein du groupe de vers</enonce>
+                <response>
+                    <texte>Pour pouvoir afficher le numéro du vers, j'ai utilisé la liste html numérotée &amp;ol&gt;. Pour rendre l'affichage plus joli, j'ai également récupéré le titre du poème et le nom de l'auteur.</texte>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-5.xsl dormeur-tei.xml > ex7-5.html</element>
+                    </list>
+                    <image name="./images/ex7-5.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex7/ex7-5.xsl"/>
+                    <file type="html" name="./../ex7/ex7-5.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="6">Idem en ajoutant à chaque groupe de vers son numéro d'ordre</enonce>
+                <response>
+                    <text>Pour cette question, j'ai repris la structure de la reponse précédente. Dans la définition de la règle pour les strophes, j'ai rajouté une ligne pour que le numéro du groupe apparaisse. J'ai pour cela utilisé la fonctionnalité count().</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-6.xsl dormeur-tei.xml > ex7-6.html</element>
+                    </list>
+                    <image name="./images/ex7-6.png" class="img-sm img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex7/ex7-6.xsl"/>
+                    <file type="html" name="./../ex7/ex7-6.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="7">Engendrer une page HTML bien formée dans laquelle le poème est au sein d'un tableau, avec une ligne par vers, et une ligne entre chaque strophe. Penser à aligner les lignes à gauche.</enonce>
+                <response>
+                    <text>Heureusement pour cette partie, j'ai déjà utilisé la mise en forme en tableau.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-7.xsl dormeur-tei.xml > ex7-7.html</element>
+                    </list>
+                    <image name="./images/ex7-7.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex7/ex7-7.xsl"/>
+                    <file type="html" name="./../ex7/ex7-7.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="8">Afficher les vers qui contiennent un point-virgule ou deux points (:) (format texte brut)</enonce>
+                <response>
+                    <text>Pour réaliser cette partie, j'ai utilisé la fonction contains() pour tester le contenu textuel des balises.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-8.xsl dormeur-tei.xml > ex7-8.txt</element>
+                    </list>
+                    <image name="./images/ex7-8.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex7/ex7-8.xsl"/>
+                    <file type="txt" name="./../ex7/ex7-8.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="9">Afficher les quatrains en gras et les tercets en italiques au sein d'une page HTML bien formée</enonce>
+                <response>
+                    <text>Pour la mise en forme, j'ai simplement utilisé les balises html : &lt;b&gt; pour mettre en gras et &lt;i&gt; pour mettre en italique.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex7-9.xsl dormeur-tei.xml > ex7-9.html</element>
+                    </list>
+                    <image name="./images/ex7-9.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex7/ex7-9.xsl"/>
+                    <file type="html" name="./../ex7/ex7-9.html"/>
+                </response>
+            </question>
+        </part>		
+    </exercice>
+</task>

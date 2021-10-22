@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-exos.xsl"?>
+<task>
+  <exercice num="1">
+    <title>Structurer l’information (vers une grammaire de document)</title>
+    <part num="0">
+    <question>
+      <enonce>
+        Réorganiser l'information du texte donné de manière à mettre en évidence sa structure logique.
+      </enonce>
+      <response>
+        <text>
+          On nous propose en tant que premier exercice de structurer l'information d'un texte avant d'utiliser le format XML. Pour se familiariser avec cette structuration, j'ai choisi un schéma sous forme d'un tableau que vous pouvez voir ci-dessous. Le schéma est accompagné d'un document XML présentant la même structure logique et d'un document TXT contenant le texte « en vrac ».
+        </text>
+        <image name="./images/ex1-tableau.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+        <file type="txt" name="./../ex1/ex1.txt"/>
+        <file type="xml" name="./../ex1/ex1.xml"/>
+      </response>
+    </question>
+    </part>
+  </exercice>
+</task>

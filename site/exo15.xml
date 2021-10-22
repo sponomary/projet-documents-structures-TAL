@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-exos.xsl"?>
+<task>
+    <exercice num="15">
+        <title>Patrons morpho-syntaxiques, relations de dépendance sur la base Trameur From Rhapsodie</title>
+        <part num="1" title="XSLT">
+            <question>
+                <enonce num="1">Construire une feuille de styles pour afficher uniquement le texte (sortie TXT)</enonce>
+                <comment>Le document XML est volumineux (d'environ 60 Mo), les navigateurs peuvent avoir du mal à les afficher. Il est donc conseillé de le télécharger.</comment>
+                <response>
+                    <text>Pour afficher uniquement le texte, je suis allée récupérer le contenu des balises &lt;f&gt;. J'ai aussi un peu « nettoyé » l'affichage en excluant les entités HTML d'esperluette et aussi les « XXX ». Pour rendre le résultat plus facile à lire, j'ai ajoute un retour à la ligne à la place des éléments correspondants aux fin d'énoncés (« § »).</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex15-p1-q1.xsl baseTrameurFromRhapsodie.xml > ex15-p1-q1.txt</element>
+                    </list>
+                    <image name="./images/ex15-p1-q1.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xml" name="./../ex15_oblig/baseTrameurFromRhapsodie.xml"/>
+                    <file type="xslt" name="./../ex15_oblig/ex15-p1-q1.xsl"/>
+                    <file type="txt" name="./../ex15_oblig/ex15-p1-q1.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="2">Construire une feuille de styles pour afficher (au format HTML) le texte en insérant sur chaque item sa POS</enonce>
+                <response>
+                    <text>J'ai gardé la structure de la feuille XSLT de la question précédente en modifiant la méthode de sortie. Cette fois le résultat est sous format HTML. Pour la mise en forme j'ai utilisé le framework Bootstrap. Quant à l'affichage de la POS, je l'ai mise entre parenthèses à droite du mot. L'aperçu est visible sur l'image ci-dessous. </text>
+                    <list>
+                        <element title="Transformation">xsltproc ex15-p1-q2.xsl baseTrameurFromRhapsodie.xml > ex15-p1-q2.html</element>
+                    </list>
+                    <image name="./images/ex15-p1-q2.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex15_oblig/ex15-p1-q2.xsl"/>
+                    <file type="html" name="./../ex15_oblig/ex15-p1-q2.html"/>
+                </response>		
+            </question>
+            <question>
+                <enonce num="3">Construire une feuille de styles pour extraire (en format TXT) au moins 2 patrons morpho-syntaxiques de longueurs différentes</enonce>
+                <response>
+                    <text>Pour extraire les patrons morpho-syntaxiques, j'ai créé un template par patron. Juste comme dans les exercices précédents, j'utilise les axes « following-sibling » et je teste le contenu des balises &lt;c&gt; (celle qui contient la POS). Les patrons extraits sont : ADJ-NOM et VERBE-DET-NOM. Ils sont affichées l'un après l'autre, dans le même fichier TXT.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex15-p1-q3.xsl baseTrameurFromRhapsodie.xml > ex15-p1-q3.txtl</element>
+                    </list>
+                    <image name="./images/ex15-p1-q3.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex15_oblig/ex15-p1-q3.xsl"/>
+                    <file type="txt" name="./../ex15_oblig/ex15-p1-q3.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="4">Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type SUJET (les classer et les compter)</enonce>
+                <response>
+                    <text>Dans cette question, on cherche à extraire les sujets et leur gouverneur syntaxique. Le gouverneur syntaxique d'un sujet est le verbe, souvent la racine d'une phrase. La dépendence syntaxique d'une forme est située dans la septième balise &lt;a&gt;. Chaque fois on rencontre une relation SUB, on regarde le numéro de position de son gouverneur qui est situé dans la même balise &lt;a&gt;, entre parenthèses. Ce numéro, on le récupère avec de l'aide aux fonctions « substring ». Puis on compare la position du dépendant avec celle du gouverneur – est-ce que le gouverneur est placé avant ou après du dépendant ? En fonction du résultat de ce test on utilise soit following-sibling soit preceding-sibling pour récupérer le gouverneur.</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex15-p1-q4.xsl baseTrameurFromRhapsodie.xml | sort | uniq -c | sort -gr > ex15-p1-q4.txt</element>
+                    </list>
+                    <image name="./images/ex15-p1-q4.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex15_oblig/ex15-p1-q4.xsl"/>
+                    <file type="txt" name="./../ex15_oblig/ex15-p1-q4.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="5">Construire une feuille de styles pour extraire la liste des POS en relation de dépendance syntaxique de type SUJET (les classer et les compter)</enonce>
+                <response>
+                    <text>Ici on procède de la même façon comme dans la question précédente. Sauf qu'au lieu de la forme (&lt;f&gt;) on affiche la catégorie (&lt;c&gt;). Enfin, on trie avec les commandes Unix pour obtenir le résultat ci-dessous. </text>
+                    <list>
+                        <element title="Transformation">xsltproc ex15-p1-q5.xsl baseTrameurFromRhapsodie.xml | sort | uniq -c | sort -gr > ex15-p1-q5.txt</element>
+                    </list>
+                    <image name="./images/ex15-p1-q5.png" class="img-sm img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xslt" name="./../ex15_oblig/ex15-p1-q5.xsl"/>
+                    <file type="txt" name="./../ex15_oblig/ex15-p1-q5.txt"/>
+                </response>
+            </question>
+        </part>
+        <part num="2" title="XQuery via BaseX">
+            <question>
+                <enonce num="1">Construire une requête pour extraire les items portant une relation de dépendance syntaxique de type OBJ</enonce>
+                <response>
+                    <text>Tout d'abord, on charge une nouvelle base de données avec notre document XML dans BaseX. Les formes qu'on veut extraire dans cet exercice sont les porteurs d'une relation syntaxique type OBJ. Pour cela, il faut juste retourner tous les contenus textuels des éléments qui contiennent  « OBJ » dans leur 7ème balise.</text>
+                    <image name="./images/ex15-p2-q1-requete.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <image name=".//images/ex15-p2-q1.png" class="img-sm img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xq" name="./../ex15_oblig/ex15-p2-q1.xq"/>
+                    <file type="txt" name="./../ex15_oblig/ex15-p2-q1.txt"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="2">Construire une requête pour extraire les items en relation de dépendance syntaxique de type OBJ (on affichera les formes ou les lemmes connectés par cette relation)</enonce>
+                <response>
+                    <text>Cette requête utilise des variables pour stocker les différentes valeurs comme la forme du dépendant, la forme du gouverneur et la position du gouverneur. Le principe est le même comme avec la feuille de style de la question 4 (partie XSLT). On récupère d'abord la position du gouverneur avec la fonctionnalité « substring ». Sachant la position du gouverneur, on retrouve sa forme. Pour l'affichage final, on concatène la forme du gouverneur avec la forme du dépendant en ajoutant une flèche avec la relation au milieu. Chaque forme est accompagnée de son lemme (entre parenthèses).</text>
+                    <image name="./images/ex15-p2-q2-requete.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <image name=".//images/ex15-p2-q2.png" class="img-md img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xq" name="./../ex15_oblig/ex15-p2-q2.xq"/>
+                    <file type="txt" name="./../ex15_oblig/ex15-p2-q2.txt"/>
+                </response>
+            </question>
+        </part>
+    </exercice>
+</task>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-index.xsl"?>
+<site>
+    <page>
+        <title>Présentation</title>
+        <content>
+            <paragraph>
+                <text>
+                    Bienvenue sur le site qui accueille l'ensemble des exercices effectués pour le cours « Document Structuré », enseigné par M. Fleury et Mme. Marasescu-Galleron à l'Université Paris III Sorbonne Nouvelle. Dans le cadre de ce cours, on avait divers exercices (dont 4 étaient obligatoires) à faire et  mettre sur ce site les fichiers au format XML, accompagnés des feuilles de styles XSLT. Le site montre donc ce qu’on a étudié durant le semestre, chaque exercice effectué ayant sa propre page avec les résultats (en formats XML, DTD ou XSLT).
+                    Les exercices à faire obligatoirement étaient les suivants :
+                </text>
+                <list>
+                    <element link="exo3.xml" title="TEI">Exercice 3</element>
+                    <element link="exo5.xml" title="DUCHN">Exercice 5</element>
+                    <element link="exo14.1.xml" title="Extraction dans les Fils RSS du Monde à partir de la sortie TreeTagger">Exercice 14.1</element>
+                    <element link="exo14.2.xml" title="Extraction dans les Fils RSS du Monde à partir de la sortie UDPipe">Exercice 14.2</element>
+                    <element link="exo15.xml" title="Patrons morpho-syntaxiques et relations de dépendance sur la base de Trameur From Rhapsodie">Exercice 15</element>
+                </list>
+            </paragraph>
+            <paragraph>
+                <text>
+                    Pour consultez les autres exercices, veuillez cliquer sur les onglets ci-dessus.
+                </text>
+            </paragraph>
+            <paragraph>
+                <text>
+                    Plusieurs outils ont été utilisés pour effectuer le devoir. Globalement, l'éditeur de texte Sublime Text a servi pour rédiger les documents manuellement ou pour avoir l'aperçu rapide des fichiers de travail volumineux. Un autre outil principal, c'est Oxygen XML Editor dont la version d'usage académique nous a été fourni. C'est un très bon outil pour la vérification/validation des documents, pour la construction XPath et XQuery et les autres tâches liées au format XML. Enfin, on a bien utilisé l'outil Base X, léger et performant, pour rédiger nos requêtes XQuery. Tous les outils sont accessibles pour le système MacOS sur lequel je travaille. Pour consulter les pages officielles de tous ces outils mentionnés, cliquez sur les boutons ci-dessous.
+                </text>
+            </paragraph>
+        </content>
+    </page>
+</site>

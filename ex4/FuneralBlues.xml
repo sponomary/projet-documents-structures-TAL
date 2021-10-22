@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2>
+  <teiHeader>  
+    <fileDesc>  
+      <titleStmt>  
+        <title>Tell Me the Truth about Love, ten poems by W. H. Auden</title>  
+        <author>W. H. Auden</author>  
+      </titleStmt>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <group>
+       <text>
+         <front>
+            <head>Funeral Blues</head>
+         </front>
+        <body>
+         <lg type="quatrain" rhyme="aabb">
+          <l>Stop all the clocks, cut off the telephone,</l>
+          <l>Prevent the dog from barking with a juicy bone,</l>
+          <l>Silence the pianos and with muffled drum</l>
+          <l>Bring out the coffin, let the mourners come.</l>
+         </lg>
+         <lg type="quatrain" rhyme="ccdd">
+          <l>Let aeroplanes circle moaning overhead</l>
+          <l>Scribbling on the sky the message He Is Dead,</l>
+          <l>Put crêpe bows round the white necks of the public doves,</l>
+          <l>Let the traffic policemen wear black cotton gloves.</l>
+         </lg>
+         <lg type="quatrain" rhyme="eeff">
+          <l>He was my North, my South, my East and West,</l>
+          <l>My working week and my Sunday rest,</l>
+          <l>My noon, my midnight, my talk, my song;</l>
+          <l>I thought that love would last for ever: I was wrong.</l>
+         </lg>
+         <lg type="quatrain" rhyme="bbgg">
+          <l>The stars are not wanted now: put out every one;</l>
+          <l>Pack up the moon and dismantle the sun;</l>
+          <l>Pour away the ocean and sweep up the wood;</l>
+          <l>For nothing now can ever come to any good.</l>
+          </lg>
+         </body>
+        </text>
+     </group>
+  </text>
+</TEI.2>
+

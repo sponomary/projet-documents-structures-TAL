@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bouteilles>
+    <bouteille numero="1">
+        <informations_generales>
+            <code_barre numero="3274080005003"/>
+            <marque>Cristaline</marque>
+            <origine>
+                <departement>Loiret</departement>
+                <source>Saint-Cyr-en-Val</source>
+            </origine>
+        </informations_generales>
+        <caracteristiques>
+            <caracteristiques_physiques>
+                <type>eau minerale</type>
+                <quantite>150 cl</quantite>
+            </caracteristiques_physiques>
+            <proprietes_chimiques>
+                <ph valeur="7,45"/>
+                <ionisation>
+                    <ion type_cherge="positif">
+                        <element>Calcium</element>
+                        <contenance>71 mg/L</contenance>
+                    </ion>
+                    <ion type_cherge="positif">
+                        <element>Magnésium</element>
+                        <contenance>5,5 mg/L</contenance>
+                    </ion>
+                    <ion type_cherge="negatif">
+                        <element>Chlorures</element>
+                        <contenance>20 mg/L</contenance>
+                    </ion>
+                    <ion type_cherge="negatif">
+                        <element>Nitrates</element>
+                        <contenance>1 mg/L</contenance>
+                    </ion>
+                </ionisation>
+                <autres_particules>Fer</autres_particules>
+            </proprietes_chimiques>
+        </caracteristiques>
+    </bouteille> 
+    <bouteille numero="2">
+        <informations_generales>
+            <code_barre numero="3268840001008"/>
+            <marque>Cristaline</marque>
+            <origine>
+                <departement>Alpes Maritimes</departement>
+                <source>Aurèle</source>
+            </origine>
+        </informations_generales>
+        <caracteristiques>
+            <caracteristiques_physiques>
+                <type>eau minerale</type>
+                <quantite>50 cl</quantite>
+            </caracteristiques_physiques>
+            <proprietes_chimiques>
+                <ph valeur="7,4"/>
+                <ionisation>
+                    <ion charge="positif">
+                        <element>Calcium</element>
+                        <contenance>98 mg/L</contenance>
+                    </ion>
+                    <ion charge="positif">
+                        <element>Magnésium</element>
+                        <contenance>4 mg/L</contenance>
+                    </ion>
+                    <ion charge="negatif">
+                        <element>Chlorures</element>
+                        <contenance>3,6 mg/L</contenance>
+                    </ion>
+                    <ion charge="negatif">
+                        <element>Nitrates</element>
+                        <contenance>2 mg/L</contenance>
+                    </ion>
+                </ionisation>
+            </proprietes_chimiques>
+        </caracteristiques>        
+    </bouteille>
+    <bouteille numero="3">
+        <informations_generales>
+            <code_barre numero="3057640117008"/>
+            <marque>Volvic</marque>
+            <origine>
+                <departement>Puy-de-Dôme</departement>
+                <source>Volvic</source>
+            </origine>
+        </informations_generales>
+        <caracteristiques>
+            <caracteristiques_physiques>
+                <type>eau minerales</type>
+            </caracteristiques_physiques>
+            <proprietes_chimiques>
+                <ph valeur="7"/>
+                <ionisation>
+                    <ion charge="positif">
+                        <element>Calcium</element>
+                        <contenance>11,5 mg/L</contenance>
+                    </ion>
+                    <ion charge="positif">
+                        <element>Magnésium</element>
+                        <contenance>8,0 mg/L</contenance>
+                    </ion>
+                    <ion charge="negatif">
+                        <element>Chlorures</element>
+                        <contenance>13,5 mg/L</contenance>                      
+                    </ion>
+                    <ion charge="negatif">
+                        <element>Nitrates</element>
+                        <contenance>6,3 mg/L</contenance>                    
+                    </ion>
+                </ionisation>
+                <autres_particules>Silice</autres_particules>
+            </proprietes_chimiques>
+        </caracteristiques>       
+    </bouteille>
+</bouteilles>

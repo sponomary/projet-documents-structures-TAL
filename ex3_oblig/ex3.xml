@@ -1,0 +1,2013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <!--- 1ère partie du document : header -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main" xml:lang="fre">Transcription électronique au format XML du Dictionnaire universel d’Antoine Furetière</title>
+                <title type="sub">BLÉ-BOIRE</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Aleksandra PONOMAREVA, 22000203</publisher>
+                <date when="2021">2021</date>
+            </publicationStmt>
+            <notesStmt>
+                <note type="abstract">Ce devoir a été effectué dans le cadre du cours Document Structuré du Master 1 TAL à l'Université PARIS III.</note>
+                <note type="abstract">Le texte original se trouve à la BNF, où il a été scanné et mis en ligne dans les archives de Gallica.</note>
+            </notesStmt>
+            <sourceDesc>
+                <biblFull>
+                    <titleStmt>
+                        <title>Dictionnaire universel, contenant généralement tous les mots françois tant vieux que modernes &amp; les termes des sciences et des arts,...</title>
+                        <author>
+                            <forename>Antoine</forename>
+                            <surname>Furetière</surname>
+                        </author>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher>A. et R. Leers</publisher>
+                        <pubPlace>La Haye</pubPlace>
+                        <date when="1690">1690</date>
+                    </publicationStmt>
+                </biblFull>
+                <biblStruct>
+                    <monogr>
+                        <title>Dictionnaire universel, contenant généralement tous les mots françois tant vieux que modernes, &amp; les termes des sciences et des arts,... par feu messire Antoine Furetière</title>
+                        <author>
+                            <forename>Antoine</forename>
+                            <surname>Furetière</surname>
+                        </author>
+                        <imprint>
+                            <pubPlace>La Haye</pubPlace>
+                            <biblScope unit="volume">Tome premier A-E</biblScope>
+                            <publisher>A. et R. Leers</publisher>
+                            <date when="1690">1690</date>
+                            <note type="url">http://gallica.bnf.fr/ark:/12148/bpt6k5841680f</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <!-- <dc:date>, obligatoire, unique
+                Date de création du document (à distinguer de la date de publication du document électronique vue plus haut <dc:issued>, ou de la source imprimée)  -->
+                <date when="1690"/>
+            </creation>
+            <langUsage>
+                <!--  plutôt respecter la norme ISO 639-2b sur 3 caractères : spa - fre - eng - por
+                <dc:language> -->
+                <language ident="fre">français</language>
+            </langUsage>
+            <!-- Liste de mots-clés destinés à l’indexation sujet - recommandée pour tous les textes CAHIER - mots-clés issus si possible d'un même thesaurus - 
+         <dc:subject> -->
+            <textClass>
+                <keywords>
+                    <term type="subject">Dictionnaire</term>
+                    <term type="subject">Monolingue</term>
+                    <term type="subject">Encyclopédique</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <!--- 2ème partie du document : text -->
+    <text>
+        <body>
+            <div n="tome_A-E">
+                <div n="B">
+                    <div n="BLE">
+                        <!-- BLÉ -->
+                        <entry xml:lang="fr" xml:id="Blé">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLÉ</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                    <gen expand="masculin">masc.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Plante qui produit dans son espi une
+                                    graine, qui est la principale nourriture de l'homme.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Joseph enrichit les Rois d'Egypte, en leur faisant faire des magasins de 
+                                        <hi rend="italic">blé</hi> durant les années fertiles. des ter-
+                                        res à <hi rend="italic">blé</hi>. <hi rend="italic">blé</hi> meslé. battre le <hi rend="italic">blé</hi>. scier les <hi rend="italic">bleds</hi>. On
+                                        a vû dans la Suisse garder des <hi rend="italic">bleds</hi> jusqu'à cent ans en
+                                        les laissant dans l'espi. Quelques Naturalistes ont comp-
+                                        té jusqu'à cent maladies auxquelles les <hi rend="italic">bleds</hi> sont su-
+                                        jets. 
+                                    </quote>
+                                </cit>
+                                <etym>
+                                    En <lang xml:lang="lat">Latin</lang> <hi rend="italic">frumentum</hi>, <hi rend="italic">triticum</hi>.
+                                    Ce mot vient de <mentioned><hi rend="italic">bladus</hi></mentioned>, ou <mentioned><hi rend="italic">bladum</hi></mentioned>, qui signifie <gloss><hi rend="italic">fruit</hi></gloss>, ou 
+                                    <gloss><hi rend="italic">semence</hi></gloss>, d'où est venu <mentioned><hi rend="italic">imbladare</hi></mentioned>, pour dire,<gloss><hi rend="italic">ensemen-
+                                    cer</hi></gloss>, ou <gloss><hi rend="italic">emblaver</hi></gloss>. Vossius &amp; Somnerus le derivent du
+                                    <lang xml:lang="sax">Saxon</lang> <mentioned><hi rend="italic">blad</hi></mentioned>, ou <mentioned><hi rend="italic">blada</hi></mentioned>, signifiant la même chose, ou 
+                                    du <lang xml:lang="gre">Grec</lang> <mentioned><hi rend="italic">blastos</hi></mentioned>, qui signifie, <gloss><hi rend="italic">germe</hi></gloss>. Les Italiens ap- 
+                                    pellent encore <mentioned><hi rend="italic">biada</hi></mentioned>, <gloss>tous les legumes, fruits &amp; mois-
+                                    sons, excepté le froment</gloss>.
+                                </etym>
+                                <note>
+                                    On appelle par excellence <hi rend="italic">blé</hi>, celuy qui est de pur fro-
+                                    ment. <hi rend="italic">Blé meteil</hi>, celuy qui est meslé de seigle. <hi rend="italic">Petit
+                                    blé</hi>, ou <hi rend="italic">blé maigre</hi>, c'est du seigle, ou du blé où il n'y
+                                    a gueres de froment, ou dont le grain est mal nourri, 
+                                    en un mot le <hi rend="italic">blé</hi> du moindre prix.
+                                    On appelle aussi <hi rend="italic">petits bleds</hi>, les autres grains que l'on se-
+                                    me au mois de Mars, comme l'orge, l'avoine, les
+                                    pois, les vesses; ce qu'on appelle aussi en general <hi rend="italic">les
+                                    Mars</hi>, &amp; en quelques lieux <hi rend="italic">tremois</hi>, de <hi rend="italic">trimestris</hi>.    
+                                </note>
+                            </sense>
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blé de Turquie</hi></orth>
+                                </form>
+                                ,
+                                <def>qu'on appelle autrement <hi rend="italic">Mays</hi>,
+                                    est une plante dont le fruit vient en un gros bouton, &amp;
+                                    en des lieux où la terre ne peut produire de froment.
+                                    Presque toute l'Amerique ne vit que <hi rend="italic">du blé de Turquie</hi>.
+                                </def> 
+                                <xr>
+                                    Voyez <hi rend="italic"><ref type="variant" corresp="Mays">Mays</ref></hi>.
+                                </xr>
+                            </sense>
+                            <sense n="3">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blé noir</hi></orth>ou
+                                    <orth><hi rend="italic">Blé Sarrasin</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    est un <hi rend="italic">blé</hi> qui vient en
+                                    graine noire, &amp; qui a des fleurs rouges. Il ne monte
+                                    pas en espi. Il vient dans les plus mauvaises terres, &amp;
+                                    à travers les caillous les plus espais. On en fait du pain
+                                    fort noir, &amp; il sert aussi à nourrir des volailles.
+                                </def>
+                            </sense>
+                            <sense n="4">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blé</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit aussi particulierement du grain qui sort de
+                                    l'espi quand il est battu. 
+                                </def>
+                                <note>
+                                    On dit proverbialement, Crier famine sur un tas de <hi rend="italic">blé</hi>, 
+                                    quand un avare se plaint de la misere du temps, quoy
+                                    qu'il ait dequoy vivre dans l'abondance. On dit d'une
+                                    marchandise d'un seur &amp; prompt debit, que c'est du
+                                    <hi rend="italic">blé</hi> en grenier. On dit aussi, Estre pris comme dans un
+                                    <hi rend="italic">blé</hi>, pour dire, Estre surpris sans deffense &amp; sans ar-
+                                    mes. On dit aussi, Manger son <hi rend="italic">blé</hi> en verd, pour di-
+                                    re, Manger son revenu avant que les termes en soient
+                                    escheus, &amp; être mauvais mesnager. 
+                                </note>
+                            </sense>
+                        </entry>
+                        <!-- BLEIME -->
+                        <entry xml:lang="fr" xml:id="Bleime">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLEIME</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <usg type="domain" ana="#term_de_manege">Terme de Manege</usg>
+                                <pc>.</pc>
+                                <def>
+                                    Maladie du che-
+                                    val, ou inflammation de la partie interieure du sabot
+                                    vers le talon entre la sole &amp; le petit pied.
+                                </def>  
+                            </sense>
+                        </entry>
+                        <!-- BLESME -->
+                        <entry xml:lang="fr" xml:id="Blesme">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLESME</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="adjectif">adj.</pos>
+                                    <gen expand="masculin">m.</gen> &amp;
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>Descoloré, passe. Il ne se dit
+                                    que du visage.
+                                </def> 
+                                <cit type="example">
+                                    <quote>
+                                        Quand on luy fit ce reproche, cette accu-
+                                        sation, il devint <hi rend="italic">blesme</hi>, &amp; sur ce soupçon il fut arresté.
+                                    </quote>
+                                </cit>   
+                            </sense>   
+                        </entry>
+                        <!-- BLESMIR -->
+                        <entry xml:lang="fr" xml:id="Blesmir">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLESMIR</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="verbe">v.</pos>
+                                    <subc expand="neutre">n.</subc>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                              <def>
+                                  Paslir, changer de visage par l'é-
+                                  motion de quelque passion violente, de colere, de hon-
+                                  te, de douleur.    
+                              </def>
+                              <cit type="example">
+                                  <quote>
+                                      Quand on a annoncé à cette veufve la
+                                      mort de son fils, elle a <hi rend="italic">blesmi</hi>, &amp; s'est pasmée.
+                                </quote>
+                              </cit> 
+                            </sense>  
+                        </entry>
+                        <!-- BLESSER -->
+                        <entry xml:lang="fr" xml:id="Blesser">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLESSER</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="verbe">v.</pos>
+                                    <subc expand="actif">act.</subc>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Frapper, ou serrer violemment
+                                    quelque partie d'un corps sensitif.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Les coups orbes <hi rend="italic">bles-
+                                        sent</hi> en faisant des contusions. les instruments tranchants
+                                        <hi rend="italic">blessent</hi> en faisant des playes. les souliers trop serrés <hi rend="italic">bles-
+                                        sent</hi> les pieds. une selle dure <hi rend="italic">blesse</hi> un cheval.
+                                    </quote>
+                                </cit>
+                                <etym>
+                                    Menage
+                                    derive ce mot de <mentioned><hi rend="italic">lasare</hi></mentioned> <lang xml:lang="lat">Latin</lang>, en y adjoûtant un b.
+                                </etym>
+                            </sense>
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blesser</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit avec le pronom personnel, quand on
+                                    se fait mal, soit en tombant, soit par mesgarde, soit
+                                    volontairement.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Je me suis <hi rend="italic">blessé</hi> par mesgarde.
+                                    </quote>
+                                </cit>
+                            </sense>
+                            <sense n="3">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blesser</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    signifie aussi, Choquer, toucher trop for-
+                                    tement ce qui est delicat.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Les couleurs trop vives <hi rend="italic">blessent</hi>
+                                        la veuë. une dissonance <hi rend="italic">blesse</hi> l'oreille. 
+                                    </quote>
+                                </cit>
+                            </sense>   
+                            <sense n="4">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blesser</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit figurément des choses spirituelles.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Une
+                                        chose monstrueuse <hi rend="italic">blesse</hi> l'imagination. un extravagant a
+                                        l'esprit <hi rend="italic">blessé</hi>, est <hi rend="italic">blessë</hi> du cerveau. il ne faut rien dire
+                                        devant les femmes qui <hi rend="italic">blesse</hi> la pudeur, qui <hi rend="italic">blesse</hi> les
+                                        oreilles chastes.
+                                    </quote>
+                                </cit>
+                            </sense>   
+                            <sense n="5">
+                                <form>
+                                        <orth><hi rend="smallcaps">Blesser</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit figurément en matiere d'amour.
+                                </def>
+                                <cit>
+                                    <quote>
+                                        Cet
+                                        amant a le coeur <hi rend="italic">blessé</hi>, les beaux yeux de cette Dame
+                                        l'ont <hi rend="italic">blessé</hi>.
+                                    </quote>
+                                </cit>
+                            </sense>
+                            <sense n="6">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blesser</hi></orth>
+                                </form>
+                                <def>
+                                    Blesser, signifie encore au figuré, Nuire à quelque
+                                    chose, y donner atteinte, y faire bresche.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Ces faits
+                                        que vous avez avoués <hi rend="italic">blessent</hi> vôtre cause, donnent at-
+                                        teinte à vostre droit. il ne faut point faire de medisances
+                                        qui <hi rend="italic">blessent</hi> la reputation du prochain, qui luy nuisent.
+                                        les railleries trop fortes <hi rend="italic">blessent</hi> l'amitié : il y en a d'inno-
+                                        centes qui ne <hi rend="italic">blessent</hi> personne.
+                                    </quote>
+                                </cit>
+                            </sense>  
+                            <sense n="7">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blesser</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    Blesser, signifie encore, Porter dommage. 
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Cette
+                                        sentence me <hi rend="italic">blesse</hi> en ce chef, elle me fait un grief,
+                                        un prejudice notable.
+                                    </quote> 
+                                </cit>
+                                <note>
+                                    On dit proverbialement, qu'on ne sçait pas où le soulier
+                                    nous <hi rend="italic">blesse</hi>, où le bast nous <hi rend="italic">blesse</hi>, quand on ne sçait
+                                    pas le deplaisir secret que nous avons dans l'ame. On
+                                    dit aussi, Autant de morts que de <hi rend="italic">blessés</hi>, il n'y eut qu'un
+                                    chapeau perdu, pour dire, il n'y arriva pas grand
+                                    mal.
+                                </note>
+                            </sense>  
+                            <re>
+                                <form type="lemmaGrp">
+                                    <form>
+                                        <orth><hi rend="smallcaps">Blessé</hi></orth>
+                                    </form>
+                                        ,
+                                    <form type="inflected">
+                                        <orth type="part"><hi rend="smallcaps">ée</hi></orth>
+                                    </form>
+                                    <gramGrp>
+                                        <pos expand="participe">part.</pos>
+                                        <pos expand="adjectif">adj.</pos>
+                                    </gramGrp>
+                                </form>
+                            </re>  
+                        </entry>
+                        <!-- BLESSURE -->
+                        <entry xml:lang="fr" xml:id="Blessure">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLESSURE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Playe, contusion.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Ce brave est
+                                        mort de ses <hi rend="italic">blessures</hi>. ce Capitaine prouve sa valeur par
+                                        les marques des <hi rend="italic">blessures</hi> qu'il a receuës.
+                                    </quote>
+                                </cit>
+                            </sense>
+                            <sense n="2">
+                                <form>
+                                        <orth><hi rend="smallcaps">Blessure</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    Blessure, se dit aussi figurément des choses spi-
+                                    rituelles.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Une action lasche est une <hi rend="italic">blessure</hi> à l'hon-
+                                        neur. l'amour fait souvent de grandes <hi rend="italic">blessures</hi> dans le
+                                        coeur.
+                                    </quote>
+                                </cit>
+                            </sense>
+                        </entry>
+                        <!-- BLETTE -->
+                        <entry xml:lang="fr" xml:id="Blette">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLETTE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Espece de plante &amp; de racine bonne à
+                                    manger. Il y en a de deux sortes : les unes rouges, qui
+                                    semblent teintes en escarlatte, dont la incine jette un
+                                    jus fort rouge, &amp; dont les feuilles &amp; la tige ressemblent
+                                    à celle du passevelours. Il y en a qui croissent en arbris-
+                                    seaux, dont la tige est ferme, rude, &amp; de la grosseur
+                                    du bras. Leur fleur a force chattons &amp; espics, dont la
+                                    cime regarde enbas. Les blanches produisent des feuil-
+                                    les &amp; des tiges semblables aux rouges. Leurs graines &amp;
+                                    leurs fleurs sont en maniere de grappes qui sortent entre
+                                    les feuilles &amp; les branches, comme le panis.
+                                </def>
+                                <etym>
+                                    En <lang xml:lang="lat">Latin</lang>.
+                                    <mentioned><hi rend="italic">blitum</hi></mentioned>.
+                                </etym>
+                            </sense>
+                        </entry>
+                        <!-- BLEU -->
+                           <entry xml:lang="fr" xml:id="Bleu">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLEU, Bleüe</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="adjectif">adj.</pos>
+                                    &amp;
+                                    <pos expand="substantif">subst.</pos>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                               <def>
+                                   Qui est de couleur d'a-
+                                   zur.
+                               </def>
+                                <note>
+                                    Qui est de couleur d'a-
+                                    zur. Le <hi rend="italic">bleu</hi> des Teinturiers est une couleur qui se fait
+                                    avec le pastel, qui croist dans le haut Languedoc ; ou
+                                    avec la vouëde ou petit pastel qui croist en Normandie ;
+                                    ou avec de l'indigo qui vient des Indes. Les nuances du 
+                                    <hi rend="italic">bleu</hi> sont le <hi rend="italic">bleu blanc</hi>, le <hi rend="italic">bleu naissant</hi>, le <hi rend="italic">bleu paste</hi>, le
+                                    <hi rend="italic">bleu mourant</hi>, <hi rend="italic">bieu mignon</hi>, <hi rend="italic">bleu celeste</hi>, il tient le mi-
+                                    lieu de la nuance ; <hi rend="italic">bleu reyne</hi> ; <hi rend="italic">bleu turquin</hi>, c'est un
+                                    <hi rend="italic">bleu</hi> bien foncé ; <hi rend="italic">bleu de Roy</hi>, fleur de guesde, <hi rend="italic">bleu pers</hi>,
+                                    Aldego, &amp; <hi rend="italic">bleu d'enfer</hi>. Du <hi rend="italic">bleu</hi> &amp; ou jaune se com-
+                                    pose le verd. Du <hi rend="italic">bleu</hi> &amp; du rouge d'escarlate de France
+                                    se fait la couleur de Roy, l'amaranthe, la couleur de
+                                    pensée, le violet. Du bleu &amp; du rouge cramoisi se com-
+                                    pose le colombin, le pourpre, le gris de lin, &amp; autres
+                                    gris, suivant qu'ils sont plus ou moins bouillis. Les
+                                    <hi rend="italic">bleus pasles</hi> ou <hi rend="italic">bleus beaux</hi> seront teints de pure cuve
+                                    d'Inde. Les <hi rend="italic">bleus celestes</hi> ou complets doivent avoir un
+                                    pied d'orseille de Lyon, puis estre passez sur une cuve
+                                    d'Inde. C'est une condition necessaire à la lumiere pour
+                                    paroistre <hi rend="italic">bleuë</hi>, d'être discontinuée : telle est celle de
+                                    la flamme du soulfre, de l'esprit de vin, du bois pour-
+                                    ri, des vers luisants, des escailles de quelques poissons,
+                                    &amp;c. Les sucs des fleurs <hi rend="italic">bleuës</hi> &amp; violettes deviennent
+                                    verds par les alkalis, &amp; prennent un beau rouge par les
+                                    acides. Il paroist du <hi rend="italic">bleu</hi> dans l'eau où on a mis tremper
+                                    du bois nephretique. Le <hi rend="italic">bleu</hi> des Teinturiers ne reçoit
+                                    point de changement par les acides, ni par les alkalis :
+                                    c'est pourquoy on se sert de pastel avant que de donner
+                                    une autre couleur, quand on veut donner le bon teint à
+                                    quelque estoffe. C'est le tres grand éloignement qui
+                                    nous fait croire que les cieux sont <hi rend="italic">bleus</hi>.
+                                </note>
+                                <cit type="example">
+                                    <quote>
+                                        une mer tres-
+                                        étoignée paroist <hi rend="italic">bleuë</hi>.
+                                    </quote>
+                                </cit>
+                                <etym>
+                                    Ce mot vient de l'<lang xml:lang="ger">Allemand</lang>
+                                    <hi rend="italic">blew</hi>, <gloss>signifiant la même chose</gloss>. Saumaise luy donne
+                                    une origine Latine, &amp; croit qu'on a dit <mentioned><hi rend="italic">blutum</hi></mentioned>, quasi
+                                    <mentioned><hi rend="italic">ablutum</hi></mentioned> aut <mentioned><hi rend="italic">dilutum</hi></mentioned> parce que c'est une espece de couleur
+                                    de pourpre bien lavée : d'où vient aussi qu'on appelle
+                                    ces fleurs <hi rend="italic">bleuës</hi> qui viennent dans les bleds, <mentioned><hi rend="italic">blaveoli</hi></mentioned>.
+                                </etym>
+                                <note>
+                                    En Peinture on dit que le <hi rend="italic">bleu</hi> est la couleur la plus fuyante
+                                    dont on peint le ciel &amp; les lointains.
+                                    On dit figurément, qu'un homme devient tout <hi rend="italic">bleu</hi>,
+                                    quand il luy survient quelque violente douleur dans l'a-
+                                    me, comme lors qu'on luy apporte quelque fascheuse
+                                    nouvelle, qu'on luy fait quelque reproche dont il se
+                                    sent coupable, parce qu'alors il devient en effet pasle &amp;
+                                    livide.
+                                    On appelle un Cordon <hi rend="italic">bleu</hi>, un Chevalier de l'Ordre du
+                                    St. Esprit, parce que la marque de cet Ordre est une
+                                    croix attachée à un cordon <hi rend="italic">bleu</hi>.
+                                    <cit>
+                                        <quote>
+                                            <l>L'argent d'un Cordon <hi rend="italic">bleu</hi> n'est pas d'autre façon,</l>
+                                            <l>Que celuy d'un Frippier, ou d'un Aide à maçon.</l>
+                                            <bibl>
+                                                <author>Regnier.</author>
+                                            </bibl>
+                                        </quote>
+                                    </cit>
+                                    On dit proverbialement, Faire des coups <hi rend="italic">bleus</hi>, pour dire,
+                                    Faire des efforts inutiles, des tentatives qui ne reüssis-
+                                    sent point.
+                                </note>
+                            </sense>
+                            <re>
+                                <form>
+                                    <orth><hi rend="smallcaps">Bleüastre</hi></orth>
+                                    <gramGrp>
+                                        <pos expand="adjectif">adj.</pos>
+                                        <gen expand="masculin">m.</gen> &amp;
+                                        <gen expand="féminin">f.</gen>
+                                    </gramGrp>
+                                </form>
+                                .
+                                <def>
+                                Couleur qui approche du
+                                bleu, qui est entre le blanc &amp; le bleu.
+                                </def>
+                            </re>
+                        </entry>
+                        <!-- BLEUIR -->
+                        <entry xml:lang="fr" xml:id="Bleuir">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLEUIR</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="verbe">v.</pos>
+                                    <gen expand="actif">act.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <usg type="domain" ana="#term_chymiste">Terme de Chymiste</usg>&amp;
+                                <usg type="domain" ana="#term_artisan">d'Artisan</usg>.
+                                <def>
+                                    Quand on veut <hi rend="italic">bleuir</hi> du fer, il faut luy donner un cer-
+                                    tain degré de feu.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        le mereure &amp; le soulfre mis sur le feu
+                                        commencent bientost à <hi rend="italic">bleuir</hi>.
+                                    </quote>
+                                </cit>
+                            </sense>
+                        </entry>
+                        <!-- SECTION B L I.-->
+                        <!-- BLINDES -->
+                        <entry xml:lang="fr" xml:id="Blindes">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLINDES</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                    <gen expand="féminin">masc.</gen>
+                                    <number expand="pluriel">plur.</number>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <usg type="domain" ana="#term_guerre">Terme de Guerre</usg>.
+                                <def>
+                                    Deffenses faites de bois, ou de branches entrelassées,
+                                    qu'on enferme entre deux rangs de pieux debout, ou de
+                                    clayes. Les pieux sont de la hauteur d'un homme, &amp;
+                                    distants de quatre ou cinq pieds. On s'en sert parti-
+                                    culierement à la teste des tranchées, quand on les pous-
+                                    se de front vers le glacis, ou lors qu'elles sont enfilées
+                                    pour mettre à couvert les travailleurs. 
+                                </def>
+                                <etym>
+                                    C'est un nom 
+                                    <lang xml:lang="flm">Flamand</lang>, qui signifie <gloss><hi rend="italic">chandeliers</hi></gloss>. D'autres disent qu'il
+                                    vient de l'<lang xml:lang="ger">Allemand</lang>, ou <lang xml:lang="nld">Hollandois</lang> <mentioned><hi rend="italic">blind</hi></mentioned>, qui signifie
+                                    <gloss><hi rend="italic">aveugle</hi></gloss> ; d'autres de l'<lang xml:lang="eng">Anglois</lang> <mentioned><hi rend="italic">blif</hi></mentioned>, qui est <gloss>une espece
+                                    de machine de guerre qu'on a appellée dans la <date>basse La-
+                                    tinité</date> <mentioned><hi rend="italic">blida</hi></mentioned></gloss>.
+                                </etym>
+                            </sense>   
+                        </entry>
+                        <!-- SECTION B L O.-->
+                        <!-- BLOC -->
+                        <entry xml:lang="fr" xml:id="Bloc">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOC</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Morceau de marbre, de pierre. 
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Il y a 
+                                        tant de <hi rend="italic">blocs</hi> de pierre de St. Leu dans cette navée, dans
+                                        ce bateau.
+                                    </quote>
+                                </cit>
+                            </sense>
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Bloc</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    Bloc, se prend aussi collectivement de plusieurs pieces
+                                    ou marchandises qui sont considerées toutes ensemble.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Il a acheté toute cette boutique en <hi rend="italic">bloc</hi>.
+                                    </quote>
+                                </cit>
+                                <etym>
+                                    Quelques-uns
+                                    disent que ce mot vient du <lang xml:lang="lat">Latin</lang> <mentioned><hi rend="italic">globus</hi></mentioned>. D'autres le de-
+                                    rivent de <mentioned><hi rend="italic">volutum</hi></mentioned>, ou <mentioned><hi rend="italic">involutum</hi></mentioned>, parce qu'on achete
+                                    souvent des marchandises emballées ou enveloppées :
+                                    ce qu'on dit, <gloss><hi rend="italic">acheter en tasche &amp; en bloc</hi></gloss>. Mais il y a 
+                                    plus d'apparence qu'il vient de <mentioned><hi rend="italic">bloc'h</hi></mentioned>, mot <lang xml:lang="cel">Celtique</lang> ou
+                                    <lang xml:lang="bre">Bas-Breton</lang> qui signifie <gloss><hi rend="italic">tout</hi></gloss>.
+                                </etym>
+                                <note>
+                                    On dit aussi, Faire un marché en <hi rend="italic">bloc</hi> &amp; en <hi rend="italic">tasche</hi>, parti-
+                                    culierement des bastiments, pour dire, Fournir, moyen-
+                                    nant certain prix, tous les materiaux &amp; les peines des
+                                    ouvriers, sans compter en detail ces fournitures, ni les
+                                    journées des ouvriers qui pourront travailler à leur <hi rend="italic">tâche</hi>.
+                                    On le dit aussi par extension, des marchez où il n'entre
+                                    point de <hi rend="italic">tasche</hi> ou de journées.
+                                </note>
+                            </sense>
+                            <sense n="3">
+                                <form>
+                                    <orth><hi rend="smallcaps">Bloc</hi></orth>
+                                </form>
+                                ,
+                                <usg type="domain" ana="#term_marine">en termes de Marine</usg>,
+                                <def>
+                                    se dit des gros billots de
+                                    bois d'orme quarrez &amp; percez en mortoises, comme
+                                    ceux qui embrassent les tenons des masts, le baston du
+                                    pavillon, qu'on appelle <hi rend="italic">chouquets</hi>, ou <hi rend="italic">teste de More</hi>;
+                                    ou ceux qui enferment des poulies pour élever les ver-
+                                    gues, qu'on appelle <hi rend="italic">bloc d'issas</hi>, ou <hi rend="italic">sep de drisse</hi>.
+                                </def>
+                            </sense>
+                            <sense n="4">
+                                <form>
+                                    <orth><hi rend="smallcaps">Bloc</hi></orth>
+                                </form>
+                                ,
+                                <usg type="domain" ana="#term_fauconnerie">en termes de Fauconnerie</usg>,
+                                <def>
+                                    se dit de la perche
+                                    sur laquelle on met l'oiseau de proye. Le <hi rend="italic">bloc</hi> doit être
+                                    garni de drap.
+                                </def>
+                            </sense>
+                        </entry>
+                        <!-- BLOCAGE -->
+                        <entry xml:lang="fr" xml:id="Blocage">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOCAGE</orth>ou
+                                    <orth>Blocaille</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Menu moilon, ou
+                                    pierres qui servent à remplir les vuides qui sont dans les
+                                    murs entre de plus grosses pierres, ou les parements.
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BLOCHET -->
+                        <entry xml:lang="fr" xml:id="Blochet">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOCHET</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <usg type="domain" ana="#term_charpenterie">Terme de Charpenterie</usg>.
+                                <def>
+                                    C'est une
+                                    piece de bois posée sur les sablieres des crouppes, qui
+                                    entretient les chevrons des couvertures. Il y a des <hi rend="italic">blochets</hi> mordants, &amp; à queuë d'aronde.
+                                </def>
+                                <note>
+                                    Le <hi rend="italic">blochet</hi> est aussi une piece de bois qui se met sous la pan-
+                                    ne au dessus du gousset, qui tient à tenons &amp; à mor-
+                                    toises.
+                                </note>
+                            </sense> 
+                        </entry>
+                        <!-- BLOCUS -->
+                        <entry xml:lang="fr" xml:id="Blocus">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOCUS</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Siege d'une ville qu'on veut prendre
+                                    par famine, en occupant tous les passages par où les
+                                    vivres &amp; les autres necessitez de la vie luy peuvent arri-
+                                    ver. Les <hi rend="italic">blocus</hi> se forment par la Cavalene.
+                                </def>
+                                <note>
+                                    On le dit aussi du commencement d'un fiege, quand on
+                                    envoye des trouppes se saisir des principales avenuës où
+                                    l'on veut établir ses quartiers. 
+                                </note>
+                                <etym>
+                                    Ce mot vient de l'<lang xml:lang="ger">Alle-
+                                        mand</lang> <mentioned><hi rend="italic">blochus</hi></mentioned>, qui signifie un <gloss><hi rend="italic">boulevart</hi>, ou <hi rend="italic">maison de
+                                    bois</hi></gloss>. Menage.
+                                </etym>
+                            </sense> 
+                        </entry>
+                        <!-- BLOND -->
+                        <entry xml:lang="fr" xml:id="Blond">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOND</orth>
+                                </form>
+                                ,
+                                <form type="inflected">
+                                    <orth type="féminin">onde</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="adjectif">adj.</pos>
+                                    &amp;
+                                    <pos expand="substantif">subst.</pos>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Couleur du poil de
+                                    l'homme qui est entre le blanc &amp; le roux.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Les Italiens
+                                        aiment le <hi rend="italic">blond</hi> doré, le <hi rend="italic">blond</hi> un peu ardent. les gens
+                                        du Nord ont souvent un <hi rend="italic">blond</hi> fade, un <hi rend="italic">blond</hi> de filasse.
+                                        les beautés <hi rend="italic">blondes</hi> durent moins que les beautés brunes.
+                                        le <hi rend="italic">blond</hi> cendré ou meslé de gris est le poil le plus agrea-
+                                        ble. 
+                                    </quote>
+                                </cit>
+                                <note>On dit figurément &amp; poëtiquement, la <hi rend="italic">blonde</hi> Cerés,
+                                    à cause de ses espics jaunissans ; &amp; le <hi rend="italic">blond</hi> Phoebus,
+                                    à cause qu'on le depeint avec une perruque <hi rend="italic">blonde</hi>, aussi-
+                                    bien que nous depeignons les Anges, parce qu'en Fran-
+                                    ce on tient ce poil pour le plus beau. 
+                                </note>
+                                <etym>
+                                    Du Cange derive
+                                    ce mot du <lang xml:lang="sax">Saxon</lang> <mentioned><hi rend="italic">blond</hi></mentioned>, qui signifie <gloss><hi rend="italic">meslé</hi></gloss> ; ou de <mentioned><hi rend="italic">blondel</hi></mentioned>,
+                                    qui signifie <gloss><hi rend="italic">teint coloré par art</hi></gloss>, d'où on a dit dans la <date>basse
+                                        Latinité</date> <mentioned><hi rend="italic">blundus</hi></mentioned>, ou <mentioned></mentioned><hi rend="italic">blondus</hi><mentioned></mentioned>.
+                                </etym>
+                                <note>On dit proverbialement, qu'un homme est delicat &amp; <hi rend="italic">blond</hi>,
+                                    quand il fait trop le beau, ou le difficile : qu'il est <hi rend="italic">blond</hi>
+                                    comme un bassin, pour dire, que ses cheveux ont de
+                                    l'éclat. On dit aussi ironiquement, un <hi rend="italic">blond</hi> d'Egypte,
+                                    en parlant d'un homme fort noir. 
+                                </note>
+                            </sense>
+                            <re n="1">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blondin</hi></orth>
+                                </form>
+                                ,
+                                <form type="inflected">
+                                    <orth type="féminin"><hi rend="smallcaps">ine</hi></orth>
+                                </form>
+                                .
+                                <def>
+                                    Qui a les cheveux blonds, ou une
+                                    perruque blonde.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Les coquettes aiment fort les blon-
+                                        dins. 
+                                    </quote>
+                                </cit>
+                            </re>
+                            <re n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blondir</hi></orth>
+                                </form>
+                                <gramGrp>
+                                    <pos expand="verbe">verb.</pos>
+                                    <subc expand="neutre">neut.</subc>
+                                </gramGrp>
+                                .
+                                <def>
+                                    Devenir blond. Il n'est gueres
+                                    en usage au propre, à cause qu'il n'est pas naturel au
+                                    poil de changer en blond ; mais on le dit figurément &amp;
+                                    poëtiquement des espics, quand ils deviennent jaunes
+                                    vers le temps de la moisson.
+                                </def>
+                            </re>
+                            <re n="3">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blondissant, ante</hi></orth>
+                                    <gramGrp>
+                                        <pos expand="participe">part.</pos>
+                                    </gramGrp>
+                                </form>
+                                .
+                                <def>
+                                    Qui blondit.
+                                </def>
+                                <note>
+                                    Il n'a
+                                    d'usage que comme son verbe Blondir. 
+                                </note>
+                            </re>
+                        </entry>
+                        <!-- BLOQUER -->
+                        <entry xml:lang="fr" xml:id="Bloquer">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOQUER</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="verbe">v.</pos>
+                                    <gen expand="actif">act.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Occuper les passages par où on
+                                    ameine les vivres &amp; les autres necessitez de la vie dans
+                                    une place. C'est aussi en commencer le siege, en occu-
+                                    pant les postes où doivent estre les principaux quartiers.
+                                </def>
+                                <etym>
+                                    Ce mot vient du <lang xml:lang="owl">vieux Gaulois</lang> <mentioned><hi rend="italic">blocal</hi></mentioned> ou <mentioned><hi rend="italic">bloquil</hi></mentioned>, c'est à 
+                                    dire, <gloss><hi rend="italic">barricade</hi></gloss>. Borel. Quelques-uns le derivent du
+                                    <lang xml:lang="lat">Latin</lang> <mentioned><hi rend="italic">buculare</hi></mentioned>, d'où on a fait aussi <mentioned><hi rend="italic">boucler</hi></mentioned>, qui signifie,
+                                    <gloss><hi rend="italic">fermer le passage</hi></gloss>.
+                                </etym>
+                            </sense> 
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Bloquer</hi></orth>
+                                </form>
+                                ,
+                                <usg type="domain" ana="#term_imprimerie">en termes d'Imprimerie</usg>,
+                                <def>
+                                    est, Mettre dans
+                                    la forme en la composant une lettre renversée pour tenir
+                                    la place d'une autre qui manque.
+                                </def>
+                            </sense> 
+                            <sense n="3">
+                                <form>
+                                    <orth><hi rend="smallcaps">Bloquer</hi></orth>
+                                </form>
+                                ,
+                                <usg type="domain" ana="#term_fauconnerie">en termes de Fauconnerie</usg>,
+                                <def>
+                                    se dit lors que
+                                    l'oiseau a remis la perdrix, &amp; qu'il la tient à son avan-
+                                    tage, tage, gagnant le haut ou quelque arbre prochain ; &amp; il
+                                    ne faut pas dire en ce cas qu'il l'arreste. On dit aussi,
+                                    que l'oiseau se <hi rend="italic">bloque</hi>, pour dire, qu'il pend en l'air,
+                                    &amp; s'y soûtient sans battre de l'aile.
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BLOT -->
+                        <entry xml:lang="fr" xml:id="Blot">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOT</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    est le petit chevalet de bois où se repose
+                                    l'oiseau.
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BLOTTIR -->
+                        <entry xml:lang="fr" xml:id="Blottir">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOTTIR</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="verbe">v.</pos>
+                                    <subc expand="neutre">neut.</subc>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    qui ne se dit qu'avec le pronom
+                                    personnel. Se tapir, se cacher en quelque lieu estroit,
+                                    se mettre, se ramasser en petit volume.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        On a trouvé
+                                        ce criminel qui s'estoit <hi rend="italic">blotti</hi> dans le trou d'une fenestre.
+                                    </quote>
+                                </cit>
+                            </sense> 
+                        </entry>
+                        <!-- BLOUSE -->
+                        <entry xml:lang="fr" xml:id="Blouse">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOUSE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Trou d'un billard, ou d'un tripot, où
+                                    on jette les billes, ou les balles. La grande adresse du
+                                    billard, c'est de pousser la bille de son adversaire dans la
+                                    <hi rend="italic">blouse</hi>.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        cette balle de tripot est entrée dans la galerie &amp;
+                                        dans la <hi rend="italic">blouse</hi>.
+                                    </quote>
+                                </cit>
+                                <etym>
+                                    Ce mot en <lang xml:lang="fro">vieux François</lang> signifie <gloss><hi rend="italic">des 
+                                    terres grasses à blé</hi>, qui sont molles ou marescageuses</gloss>,
+                                    qui ont tiré leur nom du <hi rend="italic">blé</hi> qu'on y semoit.
+                                </etym>
+                                <note>
+                                    On dit aussi proverbialement, qu'on a mis quelqu'un dans
+                                    la <hi rend="italic">blouse</hi>, quand on l'a mis en prison.
+                                </note>
+                            </sense> 
+                        </entry>
+                        <!-- BLOUSER -->
+                        <entry xml:lang="fr" xml:id="Blouser">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLOUSER</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="verbe">v.</pos>
+                                    <gen expand="actif">act.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Pousser une bille dans la <hi rend="italic">blouse</hi>.
+                                </def>
+                            </sense>
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Blouser</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    signifie figurément, Se tromper, prendre
+                                    mal ses mesures dans ses affaires, ou dans ses marchez,
+                                    n'y reüssir pas : mais ce terme est populaire.
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BLUET -->
+                        <entry xml:lang="fr" xml:id="Bluet">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLUET</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Sorte de plante &amp; de fleur qui croist
+                                    dans les bleds.
+                                </def>
+                                <etym>
+                                    En <lang xml:lang="lat">Latin</lang> <mentioned><hi rend="italic">cyanus</hi></mentioned>.
+                                </etym>
+                            </sense> 
+                        </entry>
+                        <!-- BLUETTE -->
+                        <entry xml:lang="fr" xml:id="Bluette">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLUETTE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Petite estincelLe de feu.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Il ne faut
+                                        qu'une <hi rend="italic">bluette</hi> de feu pour causer un grand incendie. 
+                                    </quote>
+                                </cit>
+                                <etym>
+                                    Menage derive ce mot de <mentioned><hi rend="italic">balucetta</hi></mentioned>, <lbl>diminutif</lbl> de <mentioned><hi rend="italic">balux</hi></mentioned>,
+                                    qui se prend pour ces petits grains luisants qui paroissent
+                                    dans le sable.
+                                </etym>
+                            </sense> 
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Bluette</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit figurément en choses spirituelles.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Il
+                                        n'y a pas une <hi rend="italic">bluette</hi> de bon sens, une <hi rend="italic">bluette</hi> d'esprit
+                                        dans ce discours, dans ce livre, pour dire, qu'il n'y a-
+                                        rien qui marque que l'Auteur ait du bon sens ou de l'es-
+                                        prit. 
+                                    </quote>
+                                </cit>
+                            </sense> 
+                        </entry>
+                        <!-- BLUTEAU -->
+                        <entry xml:lang="fr" xml:id="Bluteau">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BLUTEAU</orth>
+                                </form>
+                                ou
+                                <form type="variant">
+                                    <orth>Blutoir</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Instrument à separer
+                                    le son de la farine. Il est fait en maniere de grand sas ou
+                                    tamis long &amp; cylindrique, composé de plusieurs cercles
+                                    qui soustiennent une piece de toile, de soye, ou autre
+                                    estoffe fort fine, par où la farine passe, quand on le
+                                    tourne avec une manivelle.
+                                </def>
+                                <etym>
+                                    Du Cange derive ce mot de
+                                    <hi rend="italic">bultellus</hi>, qu'on a dit en même sens dans la <date>basse Latinité</date>.
+                                </etym>
+                            </sense> 
+                            <re>
+                                <form type="lemmaGrp">
+                                    <form>
+                                        <orth><hi rend="smallcaps">Blutée</hi></orth>
+                                    </form>
+                                    ,
+                                    <form type="inflected">
+                                        <orth type="part"><hi rend="smallcaps">ée</hi></orth>
+                                    </form>
+                                    <gramGrp>
+                                        <pos expand="participe">part.</pos>
+                                        <subc expand="passif">pass.</subc>&amp;
+                                        <pos expand="adjectif">adj</pos>
+                                    </gramGrp>
+                                </form>
+                                ,
+                                <def>
+                                </def>
+                            </re> 
+                        </entry>
+                        <!-- BOBECHE -->
+                        <entry xml:lang="fr" xml:id="Bobeche">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOBECHE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                    <gen expand="féminin">fem.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Partie superieure d'un flam-
+                                    beau, ou d'un chandelier, qui est creuse, où on met
+                                    la chandelle &amp; la bougie.
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BOBINE -->
+                        <entry xml:lang="fr" xml:id="Bobine">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOBINE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    petit morceau de bois tourné en rond,
+                                    cylindrique, percé &amp; mobile sur deux pivots, qui sert
+                                    à filer au roüet, ou à devider du fil, de la laine, de la
+                                    soye, de l'or, &amp;c. 
+                                </def>
+                                <etym>
+                                    Ce mot vient de <mentioned><hi rend="italic">bombina</hi></mentioned>, qu'on a
+                                    fait de <mentioned><hi rend="italic">bombix</hi></mentioned>. Menage aprés Saumaise.
+                                </etym>
+                            </sense> 
+                        </entry>
+                        <!-- BOBO -->
+                        <entry xml:lang="fr" xml:id="Bobo">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOBO</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                    <gen expand="masculin">masc.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <usg type="domain" ana="#term_enfantin"> Terme enfantin</usg>,
+                                <def>
+                                    qui signifie mal
+                                    &amp; douleur. On s'en est servi agreablement dans une
+                                    chanson.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        L'amour est un grand <hi rend="italic">bobo</hi>. 
+                                    </quote>
+                                </cit>
+                            </sense> 
+                        </entry>
+                        <!-- BOCAGE -->
+                        <entry xml:lang="fr" xml:id="Bocage">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOCAGE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Petit bois, ou bosquet, ou buisson.
+                                    Il se dit des bois touffus &amp; agreables, &amp; de petite éten-
+                                    duë.
+                                </def>
+                                <etym>
+                                    Ce mot vient de <mentioned><hi rend="italic">bosco</hi></mentioned>.
+                                </etym>
+                            </sense>
+                            <re>
+                                <form type="lemmaGrp">
+                                    <form>
+                                        <orth><hi rend="smallcaps">Bocager</hi></orth>
+                                    </form>
+                                    ?
+                                    <form type="inflected">
+                                        <orth type="féminin"><hi rend="smallcaps">ere</hi></orth>
+                                    </form>
+                                    .
+                                    <gramGrp>
+                                        <pos expand="adjectif">adj.</pos>
+                                    </gramGrp>
+                                </form>
+                                <def>
+                                    Qui se plaist dans les bocages, 
+                                    ou qui y demeure.
+                                </def>
+                                <note>
+                                    Il ne se dit que dans les fictions poe-
+                                    tiques, des Nymphes <hi rend="italic">bocageres</hi>. 
+                                </note>
+                            </re> 
+                        </entry>
+                        <!-- BOCAL -->
+                        <entry xml:lang="fr" xml:id="Bocal">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOCAL</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                    <gen expand="masculin">masc.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Vaisseau où on met de la boisson, espe-
+                                    ce de grosse bouteille ronde qui a le col estroit, qui est
+                                    ordinairement de verre.  
+                                </def>
+                                <etym>
+                                    Ce mot, selon Scaliger, vient
+                                    de <mentioned><hi rend="italic">baucalis</hi></mentioned> <lang xml:lang="lat">Latin</lang>, qui vient de l'<lang xml:lang="ara">Arabe</lang> <mentioned><hi rend="italic">baucal</hi></mentioned>, qui sig-
+                                    nifie <gloss>une espece de vase sans anse</gloss>. On appelloit aussi en
+                                    <lang xml:lang="fro">vieux François</lang> <mentioned><hi rend="italic">baucale</hi></mentioned>, <gloss>un vaisseau à rafraischir</gloss>. Selon
+                                    Saumaise, il vient de <mentioned><hi rend="italic">bauca</hi></mentioned>, qui se trouve dans la mê-
+                                    me signification.
+                                </etym>
+                                <note>
+                                    On appelle des instruments à <hi rend="italic">bocal</hi>, ceux qu'on embou-
+                                    che pour exciter quelque son, &amp; qui n'ont que deux
+                                    trous, celuy par où on pousse le vent, &amp; celuy par où
+                                    il sort, comme les cors des Vachers, des Postillons,
+                                    faits de cornes de belier ou de boeuf, des trompes &amp;
+                                    cors de chasse, des trompettes &amp; saquebutes, &amp;c.
+                                </note>
+                            </sense> 
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Bocal</hi></orth>
+                                    <gramGrp>
+                                        <pos expand="adjectif">adj.</pos>
+                                    </gramGrp>
+                                </form>
+                                ,
+                                <def>
+                                    se dit aussi de la petite partie de l'instrument qui
+                                    sert l'emboucher, qu'on fait d'argent, de cuivre, d'y-
+                                    voire, ou de bois. 
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BOCCAN -->
+                        <entry xml:lang="fr" xml:id="Boccan">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOCCAN</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                    <gen expand="masculin">masc.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <usg ana="#term_populaire"> erme populaire</usg>,
+                                <def>
+                                    qui signifie un 
+                                    bordel, un lieu de prostitution.
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BODRUCHE -->
+                        <entry xml:lang="fr" xml:id="Bodruche">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BODRUCHE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Parchemin fort delié, qui se fait
+                                    de la premiere peau qu'on leve sur les boyaux d'un boeuf.
+                                    La <hi rend="italic">bodruche</hi> sert à faire plusieurs ouvrages delicats. La
+                                    <hi rend="italic">bodruche</hi> est transparente, &amp; pourroit servir à faire des
+                                    chassis. Elle sert principalement à battre l'or qu'on re-
+                                    duit en feuille.
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BOËSTE -->
+                        <entry xml:lang="fr" xml:id="Boëste">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOËSTE</orth>, ou
+                                    <orth>Boiste</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                    <gen expand="féminin">f.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Petit vaisieau qui se ferme
+                                    avec un couvercle.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Une <hi rend="italic">boëste</hi> à portrait. une <hi rend="italic">boiste</hi> de
+                                        diamants. dans les belles collations on donne des <hi rend="italic">boëistes</hi>
+                                        de confitures. une <hi rend="italic">boëste</hi> à poudre. des <hi rend="italic">boëstes</hi> d'Apothi-
+                                        caire. 
+                                    </quote>
+                                </cit>
+                                <etym>
+                                    Ce mot vient de <mentioned><hi rend="italic">buxuletta</hi></mentioned>, <lbl>dimmutif</lbl> de <mentioned><hi rend="italic">baxu-
+                                        la</hi></mentioned>, qui a été fait de <mentioned><hi rend="italic">buxus</hi></mentioned>, à cause que les <hi rend="italic">boëstes</hi> se font
+                                    ordinairement de buis. Menage. Du Cange le derive
+                                    de <mentioned><hi rend="italic">buxis</hi></mentioned>, <mentioned><hi rend="italic">buxida</hi></mentioned>, <mentioned><hi rend="italic">bossida</hi></mentioned>, &amp; <mentioned><hi rend="italic">bustula</hi></mentioned>, qu'on a dit
+                                    dans le même sens dans la <date>basse Latinité</date> ; ou du <lang xml:lang="gre">Grec</lang> 
+                                    <mentioned><hi rend="italic">pyxis</hi></mentioned>.
+                                </etym>
+                                <note>
+                                    On appelle la <hi rend="italic">boëste</hi> des pauvres, des prisonniers, la <hi rend="italic">boëste
+                                    à Perrette</hi> : c'est celle où on reçoit les charités de ceux
+                                    de la Religion P.R. La boëste d'une Coufrairie, cer-
+                                    tain petit tronc portatif, &amp; fermé à clef, dans lequel
+                                    on reçoit les aumosnes pour les pauvres, pour la Con-
+                                    frairie ; ou les dons qu'on leur fait, quand on va ques-
+                                    ter par la ville, &amp; faire payer sa confrairie.
+                                </note>
+                            </sense> 
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boëste</hi></orth>
+                                </form>
+                                ,
+                                <usg type="domain" ana="#term_monnoyes">en termes de Monnoyes</usg>,
+                                <def>
+                                    se dit des petits
+                                    cofres où l'on enferme les monnoyes qu'on a essayées,
+                                    pour les envoyer à la Cour des Monnoyes, &amp; en faire
+                                    un nouvel essay. Les <hi rend="italic">boëstes</hi> se font par les Gardes des
+                                    Monnoyes, où ils doivent mettre sans choix de vingt
+                                    pieces d'or une, &amp; de dix-huit marcs de pieces d'ar-
+                                    gent une autre, qui servent d'échantillon pour les faire
+                                    juger.
+                                </def>
+                                <note>
+                                    On appelle aussi <hi rend="italic">boëste</hi> à la Monnoye, l'endroit où on met
+                                    le quarré des medailles, quand on les marque.
+                                </note>
+                            </sense> 
+                            <sense n="3">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boëste</hi></orth>
+                                </form>
+                                ,
+                                <usg type="domain" ana="#term_anatomie">en termes d'Anatomie</usg>,
+                                <def>
+                                    est le lieu où les os
+                                    sont enclavez &amp; emiboëstez l'un dans l'autre. 
+                                </def>
+                               </sense> 
+                            <sense n="4">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boëste</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    est aussi la partie du vilbrequin où on attache
+                                    sa mesche.
+                                </def>
+                                <note>
+                                    En general, chez les Artisans on appelle <hi rend="italic">boëstes</hi>,les ais
+                                    qui servent à revestir d'autres pieces de bois, comme
+                                    poutres ou solives ; ou les trous où entrent d'autres pie-
+                                    ces, comme la <hi rend="italic">boëste</hi> d'une presse d'Imprimerie où entre
+                                    le rouleau ; <hi rend="italic">boëste</hi> de rouë, où entre l'aissieu.
+                                </note>
+                            </sense> 
+                            <sense n="5">
+                                <usg type="domain" ana="#term_marine"> En termes de Marine</usg>,
+                                <def>
+                                    on appelle la <hi rend="italic">boëste</hi> du gouvernail,
+                                    la piece de bois percée, à travers de laquelle passe la 
+                                    la barre ou le timon.
+                                </def>
+                            </sense> 
+                            <sense n="6">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boëste</hi></orth>
+                                </form>
+                                ,
+                                <usg type="domain" ana="#term_artillerie"> en termes d'Artillerie</usg>,
+                                <def>
+                                    est un petit mortier de
+                                    fer, haut de sept à huit pouces, qu'on charge de poudre
+                                    jusqu'au haut, &amp; qu'on bouche avec un fort tampon de
+                                    de bois pour le tirer dans des feux &amp; rejouïssances publi- 
+                                    ques, afin que le bruit s'en fasse ouïr de plus loin. On 
+                                    appelle aussi <hi rend="italic">boëstes</hi>, le bouton qui est au bout de la ham- 
+                                    pe des escouvillons qui servent à nettoyer &amp; à rafraî- 
+                                    chir le canon.
+                                </def>
+                                <note>
+                                    On dit proverbialement, que dans les petites <hi rend="italic">boëstes</hi> sont
+                                    les bons onguents, pour dire, que les choses precieuses 
+                                    se mettent en peu de lieu. On dit aussi d'une chambre 
+                                    chaude &amp; bien fermée, qu'elle est close comme une 
+                                    <hi rend="italic">boëste</hi>. On dit aussi d'une personne qui est tres-propre, 
+                                    qu'il semble toûjours qu'elle sorte d'une <hi rend="italic">boëste</hi>. On dit 
+                                    aussi, mais fort bassement, d'un homme qu'on a mis 
+                                    prisonnier, qu'on l'a mis dans la <hi rend="italic">boëste</hi> aux cailloux.
+                                </note>
+                            </sense> 
+                        </entry>
+                        <!-- BOESTIER -->
+                        <entry xml:lang="fr" xml:id="Boestier">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOESTIER</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                    <gen expand="masculin">masc.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    Boëste de Chirurgien, dans la-
+                                    quelle il porte sur luy plusieurs sortes d'onguents ; &amp;
+                                    pour cet effet elle est divisée en plusieurs petites cel-
+                                    lules.  
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BOEUF -->
+                        <entry xml:lang="fr" xml:id="Boeuf">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOEUF</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">s.</pos>
+                                    <gen expand="masculin">m.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Taureau qu'on a chastré pour l'en-
+                                    graisser, ou pour le rendre plus doux pour le labourage.
+                                </def>
+                                <note>
+                                    Il est deffendu par la Loy de desirer le <hi rend="italic">boeuf</hi>, ou l'asne de 
+                                    son prochain. Moyse ne vouloit pas qu'on accouplast 
+                                    l'asne &amp; le <hi rend="italic">boeuf</hi> pour labourer. Les Indiens se servent 
+                                    de <hi rend="italic">boeufs</hi> pour leurs voitures &amp; pour leurs chariots, qui 
+                                    font des 15. ou 20. lieuës par jour, &amp; jusqu'à 60. jour- 
+                                    nées de chemin. Ces <hi rend="italic">boeuf</hi> sont differents des nostres, 
+                                    en ce qu'ils ont sur les espaules une bosse fort grosse &amp; 
+                                    fort charnuë. Le Pere Oualle en son Voyage du Perou 
+                                    dit qu'il a vû des <hi rend="italic">boeuf</hi> sentir l'eau de 4. à 5. lieuës, &amp; y 
+                                    courir, quelque force qu'on employast pour les arrester. 
+                                    Les Atheniens firent marquer un <hi rend="italic">boeuf</hi> sur leurs mon- 
+                                    noyes : d'où est venu le proverbe Grec, Le <hi rend="italic">boeuf</hi> sur la 
+                                    langue, qui se disoit d'un Orateur corrompu par argent.
+                                    On appelle une paire de <hi rend="italic">boeufs</hi>, les deux <hi rend="italic">boeufs</hi> attelez 
+                                    sous un même joug par les cornes. 
+                                    <cit type="translation">
+                                        <quote>
+                                            En <lang xml:lang="lat">Latin</lang> on dit <mentioned><hi rend="italic">bos</hi></mentioned>, 
+                                            en <lang xml:lang="gre">Grec</lang> <mentioned><hi rend="italic">bous</hi></mentioned>
+                                        </quote>
+                                    </cit>
+                                    Il y a un <hi rend="italic">boeuf</hi> sauvage aux Indes, qui est fort grand ; &amp; on 
+                                    dit que quand il se trouve la queuë embarrassée alentour 
+                                    d'un arbre, il y demeure, plustost que de souffrir la 
+                                    honte de perdre quelqu'un de ses poils.
+                                </note>
+                            </sense> 
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boeuf</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit aussi des chairs coupées de cet animal, 
+                                    qu'on vend à la boucherie.
+                                </def>
+                                <note>
+                                    Ainsi on dit, la piece de 
+                                    <hi rend="italic">boeuf</hi> tremblante, est celle qui est la plus proche de la 
+                                    poitrine, parce qu'elle palpite encore long-temps aprés 
+                                    que le <hi rend="italic">boeuf</hi> est tué : c'est celle qu'on sert sur les bonnes 
+                                    tables. La piece de <hi rend="italic">boeuf</hi> parée, est celle qui se leve à 
+                                    la teste de la surlonge. le giste, le trumeau du <hi rend="italic">boeuf</hi>. 
+                                    Le cimier de <hi rend="italic">boeuf</hi>, est la partie charnuë de la cuisse : ce 
+                                    qu'on appelle au mouton une esclanche. 
+                                </note>
+                                <xr>
+                                    Voyez <hi rend="italic"> <ref type="variant" corresp="Cimier">Cimier</ref></hi>.
+                                </xr>
+                                <note>
+                                    L'ordinaire du bourgeois est le <hi rend="italic">boeuf</hi> &amp; le mouton.
+                                </note>
+                            </sense>
+                            <sense n="3">
+                                <form>
+                                    <orth><hi rend="smallcaps">Aloyau de boeuf</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    est une piece qui se coupe le 
+                                    long des vertebres &amp; des costes.
+                                </def>
+                            </sense>
+                            <sense n="4">
+                                <form>
+                                    <orth><hi rend="smallcaps">Nerf de boeuf</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    est la partie du <hi rend="italic">boeuf</hi> destinée à la 
+                                    generation.
+                                </def>
+                            </sense>
+                            <sense n="5">
+                                <form>
+                                    <orth><hi rend="smallcaps">Langue de boeuf</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    est la langue destachée du <hi rend="italic">boeuf</hi>, 
+                                    qu'on sale &amp; qu'on fume d'ordinaire pour en faire un 
+                                    ragoust qui excite à boire.
+                                </def>
+                            </sense>
+                            <sense n="6">
+                                <form>
+                                        <orth><hi rend="smallcaps">Boeuf a la mode</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    est un <hi rend="italic">boeuf</hi> bien lardé, cuit dans 
+                                    son jus, &amp; assaisonné avec du poivre, &amp; autres choses 
+                                    de haut goust. 
+                                </def>
+                                <note>
+                                    On appelle figurément, un <hi rend="italic">gros boeuf</hi>, un homme stupide, 
+                                    grossier tant du corps que de l'esprit.
+                                </note>
+                            </sense>
+                            <sense n="7">
+                                <form>
+                                        <orth><hi rend="smallcaps">Oeuil de boeuf</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit de ceux qui ont l'oeuil gros, 
+                                    beau &amp; à fleur de teste. Homere donne souvent pour 
+                                    épithete à ses Deesses, <hi rend="italic">oeuil de boeuf</hi>.
+                                </def>
+                                <xr>
+                                    Voyez <hi rend="italic"> <ref type="variant" corresp="Oeuil">Oeuil</ref></hi>.
+                                </xr>
+                                <note>
+                                    On appelle en termes d'Architecture, un <hi rend="italic">oeuil de boeuf</hi>, 
+                                    une fenestre ronde qui se fait au dessus du dernier enta- 
+                                    blement, ou dans les toits pour les greniers.
+                                    
+                                    On appelle aussi <hi rend="italic">oeuil de boeuf</hi>, un petit vaisseau rond de 
+                                    fayence, propre pour mettre des couleurs.
+                                </note>
+                            </sense>
+                            <sense n="8">
+                                <form>
+                                    <orth><hi rend="smallcaps">Oeuil de boeuf</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    est aussi le nom d'une plante. 
+                                </def>
+                                <xr>
+                                    Voyez <ref type="variant" corresp="Oeuil"><hi rend="italic">Oeuil</hi></ref>.
+                                </xr>
+                                <note>
+                                    On dit proverbialement, qu'un homme met la charruë de- 
+                                    vant les boeufs, lors qu'il a mal arrangé son discours, 
+                                    qu'il a mis devant ce qui devoit estre derriere. On dit 
+                                    aussi de ce qu'on a accoustumé de manger à son ordi- 
+                                    naire, ou de voir continuellement, que c'est la piece 
+                                    de <hi rend="italic">boeuf</hi>. On dit aussi en cuisine, Boeuf saignant, mou- 
+                                    ton beslant, porc pourri, tout n'en vaut rien, s'il n'est 
+                                    bien cuit : ce qui veut dire, qu'il faut manger le <hi rend="italic">boeuf</hi> 
+                                    avec son jus. Il saigne comme un boeuf, pour dire, 
+                                    en abondance. Je ne luy ay dit ni oeuf, ni <hi rend="italic">boeuf</hi>, pour 
+                                    dire, Je ne luy ay point dit de grosses paroles. Il y a 
+                                    aussi un jeu des petits enfants, qu'on appelle <hi rend="italic">le pied de 
+                                    boeuf</hi>. On dit aussi des gens fort stupides, qu'ils sont 
+                                    de la Parroisse de St. Pierre aux <hi rend="italic">boeufs</hi>, le Patron des 
+                                    grosses bestes.
+                                </note>
+                            </sense>
+                        </entry>
+                        <!-- BOHEMIEN -->
+                        <entry xml:lang="fr" xml:id="Bohemien">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOHEMIEN, enne</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">subst.</pos>
+                                </gramGrp>
+                            </form>
+                            <sense>
+                                <def>
+                                    qui se dit de certains 
+                                    gueux errants, vagabonds &amp; libertins qui vivent de lar- 
+                                    cins, d'adresse, &amp; de filouteries, qui sur tout font pro- 
+                                    fession de dire la bonne adventure au peuple credule &amp; 
+                                    superstitieux. Les <hi rend="italic">Bohemiennes</hi> dansent agreablement 
+                                    des sarabandes. Plusieurs masques se déguisent en <hi rend="italic">Bo- 
+                                    hemiens</hi>. Borel derive ce mot de <hi rend="italic">boëm</hi>, vieux mot 
+                                    François qui signifioit <hi rend="italic">ensorcelé</hi>. Mais Pasquier en rap- 
+                                    porte l'origine, &amp; dit que le 17. Avril 1427. vinrent à 
+                                    Paris douze Penanciers, c'est à dire, Penitents, com- 
+                                    me ils disoient, un Duc, un Comte, &amp; dix hommes 
+                                    à cheval, qui se qualifioient Chrêtiens de la basse Egypte 
+                                    chassez par les Sarrasins, qui étant venus vers le Pape 
+                                    confesser leurs pechés, receurent pour penitence d'al- 
+                                    ler sept ans par le monde sans coucher en lit. Leur suit- 
+                                    te étoit d'environ 120. personnes, tant hommes que 
+                                    femmes &amp; enfants restants de 1200. qu'ils étoient à 
+                                    leur depart. On les logea à la Chapelle, où on les 
+                                    alloit voir en foule. Ils avoient les oreilles percées, où 
+                                    pendoit une boucle d'argent. Leurs cheveux étoient 
+                                    tres-noirs &amp; crespés, leurs femmes tres-laides, sorcie- 
+                                    res, larronnesses, &amp; diseuses de bonne adventure. L'E- 
+                                    vêque les obligea à se retirer, &amp; excommunia ceux qui 
+                                    leur avoient montré leurs mains. Par l'Ordonnance des 
+                                    Estats d'Orleans de l'an 1560. il fut enjoint à tous ces 
+                                    imposteurs sous le nom de <hi rend="italic">Bohemiens</hi>, ou Egyptiens, 
+                                    de vuider du Royaume à peine des galeres. Raphaël 
+                                    Volaterran en fait mention, &amp; dit que cette sorte de 
+                                    gens étoit extraite des Euxiens, peuples de la Perside 
+                                    qui se méloient de dire la bonne adventure.
+                                </def>
+                            </sense> 
+                        </entry>
+                        <!-- BOIRE -->
+                        <entry xml:lang="fr" xml:id="Boire">
+                            <form type="lemmaGrp">
+                                <form type="lemma">
+                                    <orth>BOIRE</orth>
+                                </form>
+                                <pc>.</pc>
+                                <gramGrp>
+                                    <pos expand="substantif">ver.</pos>
+                                    <gen expand="masculin">act.</gen>
+                                </gramGrp>
+                            </form>
+                            <sense n="1">
+                                <def>
+                                    Avaler quelque liqueur pour estan- 
+                                    cher sa soif, pour se rafraischir, pour se purger, ou 
+                                    pour le simple plaisir. Ainsi on dit, <hi rend="italic">Boire</hi> à sa soif, 
+                                    pour dire, Ne <hi rend="italic">boire</hi> que pour la necessité.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                    <hi rend="italic">Boire</hi> frais, 
+                                    <hi rend="italic">boire</hi> à la glace, <hi rend="italic">boire</hi> pour se rafraischir. <hi rend="italic">boire</hi>, avaler 
+                                        une medecine. <hi rend="italic">boire</hi> à l'Allemande. <hi rend="italic">boire</hi> à tire larigot. 
+                                    </quote>
+                                    <xr>
+                                        Voyez <hi rend="italic"><ref type="variant" corresp="Larigot">Larigot</ref></hi>
+                                    </xr>
+                                    <quote>
+                                        <hi rend="italic">boire</hi> d'autant. <hi rend="italic">boire</hi> tout pur. <hi rend="italic">boire</hi> 
+                                        comme un trou. <hi rend="italic">boire</hi> à longs traits, des rasades, de 
+                                        rouges bords, pour dire, <hi rend="italic">boire</hi> en debauché, &amp;
+                                        ;pour 
+                                        s'enyvrer.
+                                    </quote>
+                                </cit>
+                                <note>
+                                    Il y a des animaux qui sont long-temps sans 
+                                    <hi rend="italic">boire</hi>, comme le chameau. L'Auteur de l'Histoire des 
+                                    Antilles assûre que les cochons des Caraïbes <hi rend="italic">boivent</hi> peu, 
+                                    ou point du tout ; que les chevres ne <hi rend="italic">boivent</hi> qu'une fois 
+                                    la semaine, les civettes qu'une fois le mois ; &amp; que les 
+                                    vaches sont six mois sans <hi rend="italic">boire</hi>. Les Chinois tiennent 
+                                    pour un grand regal de <hi rend="italic">boire</hi> chaud ; &amp; leur boisson qui 
+                                    est le thé, &amp; le vin de ris, est toûjours sur le feu dans 
+                                    quelque vaisseau proche la table.
+                                    On dit absolument dans ce sens, qu'un homme est sujet à 
+                                    <hi rend="italic">boire</hi>, ou qu'il <hi rend="italic">boit</hi>, pour dire, qu'il est coustumier de 
+                                    s'enyvrer ; &amp; qu'il <hi rend="italic">boit</hi> bien, pour dire, qu'il porte 
+                                    bien son vin ; qu'il <hi rend="italic">boit</hi> sec, pour dire, qu'il ne paroist 
+                                    pas qu'il soit desalteré, ou qu'il <hi rend="italic">boit</hi> jusqu'à la derniere 
+                                    goute, &amp; qu'il laisse le verre à sec. <hi rend="italic">Boire</hi> à la santé, est 
+                                    une ceremonie de beuveurs qui se fait en saluant quel- 
+                                    qu'un, lors qu'on veut <hi rend="italic">boire</hi> pour luy faire honneur, &amp; 
+                                    porter une santé, inviter un autre d'en faire autant. 
+                                    <hi rend="italic">Boire</hi> à la ronde, c'est boire la santé de toute la compag- 
+                                    nie l'un aprés l'autre. <hi rend="italic">Boire</hi> les inclinations, c'est re- 
+                                    commencer à <hi rend="italic">boire</hi> les santés des mêmes personnes. 
+                                    Crier le Roy <hi rend="italic">boit</hi>, c'est faire une ceremonie qui est en 
+                                    usage dans toute l'Europe, en élisant pour Roy au ha- 
+                                    sard, &amp; par le moyen d'une feve, quelqu'un de la com- 
+                                    pagnie le jour des Rois, auquel on est obligé d'applau- 
+                                    dir toutes les fois qu'il <hi rend="italic">boit</hi>.
+                                </note>
+                            </sense> 
+                            <sense n="2">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boire</hi></orth>
+                                </form>
+                                <def>
+                                    ensemble, est aussi un témoignage d'amitié, 
+                                    qui se fait en se donnant l'un à l'autre quelque repas. Il 
+                                    l'est aussi de reconciliation : car quand on veut raccom- 
+                                    moder des gens brouillés, on dit qu'on les fera <hi rend="italic">boire</hi> en- 
+                                    semble. On dit même en ce sens au figuré, quand les 
+                                    voix, ou les instruments de deux Musiciens ne sont pas 
+                                    d'accord, qu'il les faut faire <hi rend="italic">boire</hi> ensemble.
+                                </def>
+                            </sense> 
+                            <sense n="3">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boire</hi></orth>
+                                </form>
+                                <def>
+                                    le vin du marché, est aussi une coustume prati- 
+                                    quée parmi le peuple, &amp; sur tout à la campagne, de ne 
+                                    faire aucun marché sans aller <hi rend="italic">boire</hi> ensuitte en signe de 
+                                    bonne foy &amp; de réjouïssance : &amp; on dit aussi des petits 
+                                    presents qu'on donne aux valets, &amp; aux artisans qui ont 
+                                    rendu quelque service, que c'est pour <hi rend="italic">boire</hi>, pour se ré- 
+                                    jouïr.
+                                </def>
+                                <note>
+                                    On dit poëtiquement, <hi rend="italic">Boire</hi> le Nectar, pour dire, Estre 
+                                    au rang des Dieux, assis à leur table. <hi rend="italic">Boire</hi> le Stix, le 
+                                    Cocite, pour dire, Estre mort, aller au Royaume de 
+                                    Pluton. On dit aussi, Ceux qui <hi rend="italic">boivent</hi> le Gange, le 
+                                    Thermodon, pour dire, les peuples qui habitent sur 
+                                    les rives de ces fleuves.
+                                    On dit figurément, que la terre <hi rend="italic">boit</hi>, que le papier <hi rend="italic">boit</hi> ; 
+                                    &amp; de toutes les autres matieres seches &amp; spongieuses, 
+                                    qu'elles <hi rend="italic">boivent</hi>, quand elles sont penetrées de quelque 
+                                    liqueur : &amp; l'on dit en Chymie, que les alkalis <hi rend="italic">boivent</hi> 
+                                    les acides, pour dire, qu'ils s'en empreignent, qu'ils 
+                                    s'en imbibent, &amp; qu'ils entrent l'un dans l'autre pour 
+                                    faire un corps nouveau &amp; different des deux autres.
+                                </note>
+                            </sense> 
+                            <sense n="4">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boire</hi></orth>
+                                </form>
+                                <def>
+                                    le calice, se dit aussi figurément, pour dire, Souffrir 
+                                    avec patience quelque infortune qu'on ne peut éviter, 
+                                    faire quelque chose par une force majeure. En ce même 
+                                    sens on dit, <hi rend="italic">Boire</hi> un affront, une honte, une injure.
+                                </def>
+                                <note>
+                                    On dit en termes de Lingerie &amp; de Cousture, Mener 
+                                    <hi rend="italic">boire</hi> une estoffe, du linge, du passement, pour dire, 
+                                    le coudre lasche &amp; un peu plissé.
+                                    On dit au Manege, <hi rend="italic">Boire</hi> la bride, quand le mords re- 
+                                    monte trop haut, &amp; se deplace de dessus les barres où se 
+                                    fait l'appuy.
+                                    On dit en termes des Eaux &amp; Forests, qu'une mare, un 
+                                    fossé, ou une chantepleure <hi rend="italic">boit</hi> en riviere, quand elle a 
+                                    quelque communication avec elle : ce qui est deffendu 
+                                    par l'Ordonnance.
+                                </note>
+                            </sense> 
+                            <sense n="5">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boire</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    est quelquefois subst. &amp; signifie, Boisson.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Cet 
+                                        homme est si attaché à son travail, à son amour, qu'il 
+                                        en perd le <hi rend="italic">boire</hi> &amp; le manger.
+                                    </quote>
+                                </cit>
+                            </sense>
+                            <sense n="6">
+                                <form>
+                                    <orth><hi rend="smallcaps">A boire</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit adverbialement &amp; absolument.
+                                </def>
+                                <cit type="example">
+                                    <quote>
+                                        Don- 
+                                        ner à <hi rend="italic">boire</hi>. du vin prompt à <hi rend="italic">boire</hi>. chansons à <hi rend="italic">boire</hi>.
+                                    </quote>
+                                </cit>
+                            </sense>
+                            <sense n="7">
+                                <form>
+                                    <orth><hi rend="smallcaps">Boire</hi></orth>
+                                </form>
+                                ,
+                                <def>
+                                    se dit proverbialement en ces phrases. On ne 
+                                    sçauroit si peu <hi rend="italic">boire</hi> qu'on ne s'en sente, se dit à ceux qui 
+                                    disent ou font quelque extravagance au milieu d'un re- 
+                                    pas. On dit, A petit manger bien <hi rend="italic">boire</hi>, pour dire, 
+                                    qu'on se recompense sur le vin, quand on n'a pas beau- 
+                                    coup de mets. On dit, qu'on commence matines par 
+                                    tousser, &amp; soupper par <hi rend="italic">boire</hi>. On dit, Qui fait la folie 
+                                    la <hi rend="italic">boit</hi>, pour dire, que chacun doit porter la peine de 
+                                    sa faute. On dit encore, On ne sçauroit faire <hi rend="italic">boire</hi> un 
+                                    asne s'il n'a soif, pour dire, qu'on ne peut pas obliger 
+                                    un homme à faire une chose malgré luy. On dit encore, 
+                                    Puis qu'il est tiré, il le faut <hi rend="italic">boire</hi>, pour dire, qu'il 
+                                    faut poursuivre les affaires où on est engagé. On dit, 
+                                    qu'un homme a bien gagné à <hi rend="italic">boire</hi>, tant serieusement 
+                                    qu'ironiquement, quand il a fait quelque action utile, 
+                                    ou dommageable. On dit aussi, <hi rend="italic">Boire</hi> en asne, lors 
+                                    qu'on laisse une partie du vin dans le verre. On dit en- 
+                                    core, <hi rend="italic">Boire</hi> le petit doit, le petit coup gaillard, pour 
+                                    dire, Faire une petite débauche entre honnestes gens. 
+                                    On dit, <hi rend="italic">Boire</hi> comme un Templier, comme un trou, 
+                                    pour dire, <hi rend="italic">Boire</hi> par excés. On dit aussi en voyant un 
+                                    homme yvre, Il a plus bû que je ne luy en ay versé. 
+                                    On dit encore, Qui bon l'achete, bon le <hi rend="italic">boit</hi>.
+                                </def>
+                            </sense>
+                            <sense n="8">
+                                <form type="lemmaGrp">
+                                    <form>
+                                        <orth><hi rend="smallcaps">Beu</hi></orth>
+                                    </form>
+                                    ,
+                                    <form type="inflected">
+                                       <orth type="part"><hi rend="smallcaps">euë</hi></orth>
+                                        <gramGrp>
+                                            <pos expand="participe">part.</pos>
+                                            <subc expand="passif">pass.</subc> &amp;
+                                            <pos expand="adjectif">adj.</pos>
+                                        </gramGrp>
+                                    </form>
+                                </form>
+                                ,
+                                <def>
+                                    On dit proverbialement, Aprés graces Dieu <hi rend="italic">bû</hi> : ce qu'on 
+                                    croit venir d'une Indulgence qui fut donnée aux Alle- 
+                                    mands qui <hi rend="italic">boiroient</hi> un coup aprés avoir dit graces, pour 
+                                    les obliger par ce moyen à les dire. On dit aussi, Il a 
+                                    toute honte <hi rend="italic">beuë</hi>, il a passé par devant l'huis du Patissier, 
+                                    en parlant d'un homme sans honneur qui se moque de 
+                                    tous les reproches qu'on luy peut faire. Ce proverbe 
+                                    vient de ce que les Patissiers tenoient autrefois cabaret 
+                                    sur le derriere de leur logis, où ceux qui avoient quel- 
+                                    que pudeur entroient par une porte secrette ; &amp; quand 
+                                    un debauché y entroit par la boutique, ou par le devant, 
+                                    on disoit qu'il avoit toute honte <hi rend="italic">beuë</hi>.
+                                </def>
+                                <etym>
+                                    Tous ces mots viennent du <lang xml:lang="lat">Latin</lang> <mentioned><hi rend="italic">bibere</hi></mentioned>.
+                                </etym>
+                            </sense>
+                        </entry>
+                    </div>
+                </div>
+            </div>  
+        </body>
+    </text>
+</TEI>

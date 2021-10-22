@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-exos.xsl"?>
+<task>
+    <exercice num="8">
+        <title>Regrouper des éléments</title>
+        <part num="0">
+            <question>
+                <enonce>Modifier la feuille de style pour obtenir un tableau HTML où les infirmières sont classées par ancienneté.</enonce>
+                <response>
+                    <text>Pour cet exercice j'ai seulement ajouté dans la feuille XSLT quelque mise en forme HTML, notamment un tableau HTML. Cette fois on peut d'ailleurs nous passer de la transformation via xsltproc en déclarant la feuille XSLT directement dans l'en-tête du document XML. L'image ci-dessous montre une partie du résultat obtenu. Pour voir tout le fichier XML (ou plutôt le résultat de son transformation), cliquez sur le bouton en bas de la page. </text>
+                    <list>
+                        <element title="Déclaration de la XSLT dans le fichier XML">&lt;?xml-stylesheet type="application/xml" href="RegroupeParClassesAnciennete.xsl"?&gt;</element>
+                    </list>
+                    <image name="./images/ex8.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xml" name="./../ex8/SignaletiqueInfirmierecorpusPREMA00.xml"/>
+                    <file type="xslt" name="./../ex8/RegroupeParClassesAnciennete.xsl"/>	
+                </response>
+            </question>
+        </part>
+    </exercice>
+</task>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="stylesheet-exos.xsl"?>
+<task>
+    <exercice num="14.1">
+        <title>Extraction dans les Fils RSS du Monde</title>
+        <part num="1" title="XSLT">
+            <question>
+                <enonce num="1">Construire une feuille de styles pour afficher les contenus étiquetés avec TreeTagger</enonce>
+                <comment>Dans le PDF avec les TDs, il est précisé que le fichier de travail pour cette première partie de l'exercice est la rubrique « À la une » 2017 étiquetée avec TreeTagger.</comment>
+                <comment>Le document de travail est volumineux (d'environ 36 Mo), les navigateurs peuvent avoir du mal à les afficher. Il est donc conseillé de le télécharger via le clic droit de la souris.</comment>
+                <response>
+                    <text>Pour afficher le contenu de la rubrique «À la une» 2017 étiquetée avec TreeTagger ici, on a  opté pour un simple tableau. La première colonne correspond à chaque item, numéroté, et les deux autres colonnes correspondent à un titre et à une description. On n’a pas conservé le format XML où une ligne correspond à un token, avec sa forme, sa POS et son lemme. On a simplement préservé la structure du texte en encadrant les valeurs générées par TreeTagger entre parenthèses. L’affichage est plus clair avec un codage de couleur : le vert pour les catégories et le gris pour les lemmes. Quant au style de la page HTML, on a utilisé le Framework Bootstrap v4.6. Pour voir le document complet, cliquez sur le bouton «fichier HTML».</text>
+                    <list>
+                        <element title="Transformation">xsltproc ex14-p1-q1.xsl 3208-2017-v2.xml > ex14-p1-q1.html  </element>
+                    </list>
+                    <image name="./images/ex14-p1-q1.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xml" name="./../ex14_oblig/TreeTagger/3208-2017-v2.xml" num=" 3208 (2017)"/>
+                    <file type="xsl" name="./../ex14_oblig/TreeTagger/ex14-p1-q1.xsl"/>
+                    <file type="html" name="./../ex14_oblig/TreeTagger/ex14-p1-q1.html"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="2">Construire des feuilles de style pour extraire (au format TXT) au moins 3 patrons morphosyntaxiques (de longueurs différentes)</enonce>
+                <response>
+                    <text>Ici on a 3 feuilles de style qui permettent d'extraire les patrons  morpho-syntaxiques suivants : 1) NOM-ADJ ; 2) DET-ADJ-NOM ; 3) VERBE-PREP-DET-NOM. Les éléments importants pour pouvoir extraire des patrons sont les éléments XPath du type «following-sibling» ou «preceding-sibling» , avec la spécification du nom du nœud frère et de son numéro. Un autre élément indispensable pour faire des tests sur le contenu des balises – la fonction contains().</text>
+                    <list>
+                        <element title="Transformation 1">xsltproc ex14-p1-q2.1.xsl 3208-2017-v2.xml > ex14-p1-q2.1.txt</element>
+                        <element title="Transformation 2">xsltproc ex14-p1-q2.2.xsl 3208-2017-v2.xml > ex14-p1-q2.2.txt</element>
+                        <element title="Transformation 3">xsltproc ex14-p1-q2.3.xsl 3208-2017-v2.xml > ex14-p1-q2.3.txt</element>
+                        <element title="Exemple de test sur le contenu de la balise">following-sibling::element[2][./data[1][contains(text(),'DET')]]"></element>
+                    </list>
+                    <image name="./images/ex14-p1-q2.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xsl" name="./../ex14_oblig/TreeTagger/ex14-p1-q2.1.xsl" num=" 1"/>
+                    <file type="xsl" name="./../ex14_oblig/TreeTagger/ex14-p1-q2.2.xsl" num=" 2"/>
+                    <file type="xsl" name="./../ex14_oblig/TreeTagger/ex14-p1-q2.3.xsl" num=" 3"/>
+                    <file type="txt" name="./../ex14_oblig/TreeTagger/ex14-p1-q2.1.txt" num=" 1"/>
+                    <file type="txt" name="./../ex14_oblig/TreeTagger/ex14-p1-q2.2.txt" num=" 2"/>
+                    <file type="txt" name="./../ex14_oblig/TreeTagger/ex14-p1-q2.3.txt" num=" 3"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="3">Construire une feuille de styles pour afficher les contenus étiquetés avec TreeTagger des rubriques traitées dans le cours Projet en mettant au jour un patron morphosyntaxique</enonce>
+                <response>
+                    <text>Dans ce HTML deux patrons morpho-syntaxiques de l’exercice précédent apparaissent : DET-ADJ-NOM (en jaune) et VERBE-PRP-DET-NOM (en bleu). Le même codage de couleur est utilisé ici comme dans le premier exercice de cette partie – entre parenthèses se trouvent la catégorie (en vert) et le lemme (en orange). En gros, ce fichier permet de voir les patrons dans leur contexte.
+                    </text>
+                    <list>
+                        <element title="Transformation">xsltproc ex14-p1-q3.xsl 3208-2017-v2.xml > ex14-p1-q3.html  </element>
+                    </list>
+                    <image name="./images/ex14-p1-q3.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xsl" name="./../ex14_oblig/TreeTagger/ex14-p1-q3.xsl"/>
+                    <file type="html" name="./../ex14_oblig/TreeTagger/ex14-p1-q3.html"/>
+                </response>
+            </question>
+        </part>
+        <part num="2" title="XQuery, via BaseX">
+            <question>
+                <enonce num="1">Construire une requête pour extraire les contenus textuels des titres</enonce>
+                <response>
+                    <text>Comme d'habitude, j'ai commencé par constituer une base de données sur BaseX à partir du document fourni. Pour pouvoir extraire les contenus textuels des balises &lt;title&gt; sur l'ensemble du corpus, on commence par créer une variable $titre qui va nous permettre d'atteindre les balises qu'on souhaite. On va concaténer chaque forme extraite avec la fonctionnalité string-join(), avec l'espace comme un délimiteur, et stocker le résultat dans la variable $data.</text>
+                    <image name="./images/ex14-p2-q1-requete.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <image name="./images/ex14-p2-q1.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xq" name="./../ex14_oblig/TreeTagger/ex14-p2-q1.xq"/>
+                    <file type="xml" name="./../ex14_oblig/TreeTagger/ex14-p2-q1.xml"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="2">Construire une requête pour extraire les contenus textuels des descriptions</enonce>
+                <response>
+                    <text>La question est en fait identique à la question précédente. La seule chose à changer, c'est la balise qu'on veut atteindre – &lt;description&gt;.</text>
+                    <image name="./images/ex14-p2-q2-requete.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <image name="./images/ex14-p2-q2.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xq" name="./../ex14_oblig/TreeTagger/ex14-p2-q2.xq"/>
+                    <file type="xml" name="./../ex14_oblig/TreeTagger/ex14-p2-q2.xml"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="3">Construire une requête pour extraire les contenus textuels des titres ET des descriptions</enonce>
+                <response>
+                    <text>Cette fois, on construit une requête à partir de deux requêtes précédentes. On récupère de deux balises &lt;titre&gt; et &lt;description&gt; et on concatène leurs contenus. Pour afficher le résultat, on a ajouté la balise &lt;item&gt; pour délimiter chaque article et donc paire titre-description. BaseX nous renvoie donc comme résultat le contenu des variables $titre et $description, encadré par des balises &lt;item&gt; comme dans l'image ci-dessous.</text>
+                    <image name="./images/ex14-p2-q3-requete.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <image name="./images/ex14-p2-q3.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xq" name="./../ex14_oblig/TreeTagger/ex14-p2-q3.xq"/>
+                    <file type="xml" name="./../ex14_oblig/TreeTagger/ex14-p2-q3.xml"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="4">Construire une requête pour extraire les patrons morpho-syntaxiques NOM-ADJ</enonce>
+                <response>
+                    <text>Ici on parcourt chaque article du document (ce qui correspond et aux titres et aux descriptions) puis chaque élément de ces articles (donc chaque ligne contenant les informations POS, lemme, token...). On stocke la valeur de la POS de l'élément suivant grâce à fonctionnalité «following-sibling». Quand la POS de l'élément et celle de l'élément suivant correspondent au patron, on renvoie en résultat la valeur des tokens.</text>
+                    <image name="./images/ex14-p2-q4-requete.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <image name="./images/ex14-p2-q4.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xq" name="./../ex14_oblig/TreeTagger/ex14-p2-q4.xq"/>
+                    <file type="xml" name="./../ex14_oblig/TreeTagger/ex14-p2-q4.xml"/>
+                </response>
+            </question>
+            <question>
+                <enonce num="5">Construire une requête pour extraire les patrons morpho-syntaxiques NOM-PRP-NOM</enonce>
+                <response>
+                    <text>La requête fonctionne de la même manière que dans la question précédente. Cependant, car le patron recherché est d'une autre longueur, on ajoute une autre variable, $next_element2, qui permet de tester la valeur de la POS du deuxième élément suivant puis d'en récupérer le token si tout correspond au patron syntaxique.</text>
+                    <image name="./images/ex14-p2-q5-requete.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <image name="./images/ex14-p2-q5.png" class="img-lg img-thumbnail rounded mx-auto d-block"/>
+                    <file type="xq" name="./../ex14_oblig/TreeTagger/ex14-p2-q5.xq"/>
+                    <file type="xml" name="./../ex14_oblig/TreeTagger/ex14-p2-q5.xml"/>
+                </response>
+            </question>
+        </part>
+    </exercice>
+</task>

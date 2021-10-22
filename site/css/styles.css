@@ -1,0 +1,211 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Black", sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+}
+
+.description p {
+  text-align: justify;
+}
+
+em {
+  color: #88304e;
+  font-weight: bold;
+}
+
+code {
+  color: #88304e;
+}
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 9%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #f38181;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.comment {
+  font-size: 0.8rem;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light", sans-serif;
+}
+
+/* Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Download Tables */
+.download-table a {
+  color: #f38181;
+}
+
+/* Présentation et Conclusion Section */
+.presentation p {
+  color: #fff;
+}
+
+.text-light {
+  font-weight: bold;
+}
+
+.outil-column {
+  padding: 10% 10%;
+}
+
+.outil-section {
+  text-align: center;
+  align-items: center;
+}
+
+.outil-section h3 {
+  color: #ff4c68;
+  font-size: 24px;
+}
+
+.outil-section h4 {
+  color: #f38181;
+  font-size: 1em;
+}
+
+.outil-section p {
+  font-size: 1em;
+  color: grey;
+}
+
+.outil-column {
+  padding: 10% 10%;
+}
+
+
+.presentation-link {
+  color: #ffe2e2;
+}
+
+.presentation-link:hover {
+  color: #88304e;
+}
+
+#title {
+  background-color: #f38181;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 9% 7%;
+}
+
+/* BaO 1 Section */
+.code-snippet {
+  background-color: #F7F7F7;
+  display: inline-block;
+  margin-left: 2px;
+  width: 800px;
+  vertical-align: top;
+}
+
+/* BaO2 Section */
+#bao2 {
+  background-color: #a3ddcb;
+}
+
+/* BaO3 Section */
+
+/* Conclusion Section */
+
+/* Tools Section */
+#tools {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #88304e;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #FF4B67;
+}
+
+/* Footer Section */
+#footer {
+  text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  color: #fff;
+}
+
+/* Images */
+
+.img-lg {
+  width: 85%;
+  margin-left: 200px;
+}
+
+.img-md {
+  width: 50%;
+}
+
+.img-sm {
+  width: 30%;
+  padding: 10px;
+}

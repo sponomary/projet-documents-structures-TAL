@@ -1,4 +1,4 @@
-# Projet Documents Structurés (Master 1 TAL)
+## Projet Documents Structurés (Master 1 TAL)
 
 Ceci est l'ensemble des exercices effectués pour le cours « Documenst Structurés » de Master 1 Traitement Automatique des Langues. 
 Dans le cadre de ce cours, on avait divers exercices (dont 4 étaient obligatoires) à faire et mettre sur [ce site](http://www.tal.univ-paris3.fr/plurital/travaux-2020-2021/X-DOCSTRUCT-2020-2021-S2/08/site/index.xml) les fichiers au format XML, accompagnés des feuilles de styles XSLT. 
